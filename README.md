@@ -7,10 +7,9 @@
 
 ## 開発
 
-アプリ本体は `apps/web` にある Next.js プロジェクト。
+リポジトリ直下が Next.js プロジェクト。
 
 ```bash
-cd apps/web
 pnpm install
 pnpm dev
 ```
@@ -20,7 +19,6 @@ pnpm dev
 ### ビルド・Cloudflare Workers 上でのプレビュー
 
 ```bash
-cd apps/web
 pnpm build     # next build の疎通確認
 pnpm preview   # opennextjs-cloudflare build && opennextjs-cloudflare preview（Workers ランタイム相当での確認）
 ```
@@ -28,6 +26,5 @@ pnpm preview   # opennextjs-cloudflare build && opennextjs-cloudflare preview（
 ### デプロイ
 
 ```bash
-cd apps/web
 pnpm deploy    # opennextjs-cloudflare build && opennextjs-cloudflare deploy
 ```
