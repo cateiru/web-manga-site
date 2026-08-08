@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "id": "1",
+    "name": "少年ジャンプ＋",
+    "publisher": "集英社",
+    "developer": ["株式会社はてな"],
+    "editorialDept": [],
+    "updateFrequency": {
+      "unit": "day",
+      "interval": 1,
+      "timesPerInterval": 1,
+      "daysOfWeek": null,
+      "timesOfDay": ["00:00"]
+    },
+    "type": "出版社型",
+    "isLogin": true,
+    "loginAccountType": ["メールアドレス"],
+    "isPurchase": true,
+    "isRental": true,
+    "isSubscribe": true,
+    "hasApp": true,
+    "saasBrand": "GigaViewer",
+    "description": "アプリなら『ふつうの軽音部』『サンキューピッチ』『ヒトナー』などオリジナル連載が初回全話無料で読める！人気マンガを毎日無料で更新中「少年ジャンプ＋」。",
+    "url": "https://shonenjumpplus.com/",
+    "faviconUrl": "https://cdn-ak.shonenjumpplus.com/images/favicon.ico?1785987060",
+    "abjNo": "6091713"
+  }
+]
