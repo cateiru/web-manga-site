@@ -10,7 +10,12 @@ export type LoginAccountType =
   | "コミチ"
   | "集英社ID"
   | "小学館ID"
-  | "講談社ID";
+  | "講談社ID"
+  | "Google"
+  | "Apple"
+  | "Facebook"
+  | "Twitter"
+  | "LINE";
 
 /** サイトの更新頻度情報 */
 export type UpdateFrequency = {
@@ -64,6 +69,4 @@ export type Site = {
   faviconUrl: string;
   /** OGP画像のURL */
   ogImageUrl: string;
-  /** ABJマーク（一般社団法人ABJの認証）の番号 */
-  abjNo: string;
 };
