@@ -1,0 +1,79 @@
+import type { Site } from "@/data/types";
+import { formatList, formatUpdateFrequency } from "@/lib/format";
+import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
+import styles from "./SiteDetail.module.css";
+
+type SiteDetailProps = {
+  site: Site;
+};
+
+export function SiteDetail({ site }: SiteDetailProps) {
+  return (
+    <article className={styles.detail}>
+      <a href={site.url} target="_blank" rel="noopener noreferrer">
+        {/* eslint-disable-next-line @next/next/no-img-element -- 各社OGP画像をnext/image最適化なしで表示するため */}
+        <img src={site.ogImageUrl} alt="" className={styles.ogImage} />
+      </a>
+      <div className={styles.header}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため */}
+        <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        <div>
+          <h1 className={styles.name}>{site.name}</h1>
+          <p className={styles.publisher}>{site.publisher}</p>
+        </div>
+      </div>
+      <dl className={styles.meta}>
+        <div className={styles.metaRow}>
+          <dt>出版社</dt>
+          <dd>{site.publisher}</dd>
+        </div>
+        {site.developer && site.developer.length > 0 && (
+          <div className={styles.metaRow}>
+            <dt>開発元</dt>
+            <dd>{formatList(site.developer)}</dd>
+          </div>
+        )}
+        {site.editorialDept && site.editorialDept.length > 0 && (
+          <div className={styles.metaRow}>
+            <dt>編集部</dt>
+            <dd>{formatList(site.editorialDept)}</dd>
+          </div>
+        )}
+        <div className={styles.metaRow}>
+          <dt>更新頻度</dt>
+          <dd>{formatUpdateFrequency(site.updateFrequency)}</dd>
+        </div>
+        <div className={styles.metaRow}>
+          <dt>種別</dt>
+          <dd>{site.type}</dd>
+        </div>
+        <div className={styles.metaRow}>
+          <dt>ログイン</dt>
+          <dd>
+            {site.isLogin ? site.loginAccountType.join("、") : "ログイン機能なし"}
+          </dd>
+        </div>
+        {site.saasBrand && (
+          <div className={styles.metaRow}>
+            <dt>配信SaaS</dt>
+            <dd>{site.saasBrand}</dd>
+          </div>
+        )}
+        <div className={styles.metaRow}>
+          <dt>ABJマーク番号</dt>
+          <dd>{site.abjNo}</dd>
+        </div>
+      </dl>
+      <p className={styles.description}>{site.description}</p>
+      <div className={styles.badges}>
+        <SiteBadge label="購入" active={site.isPurchase} />
+        <SiteBadge label="レンタル" active={site.isRental} />
+        <SiteBadge label="定期購読" active={site.isSubscribe} />
+        <SiteBadge label="アプリ" active={site.hasApp} />
+      </div>
+      <a href={site.url} target="_blank" rel="noopener noreferrer" className={styles.visitLink}>
+        サイトを見る
+      </a>
+    </article>
+  );
+}

@@ -6,3 +6,7 @@ const sites = sitesJson as Site[];
 export function getSites(): Site[] {
   return sites;
 }
+
+export function getSiteById(id: string): Site | undefined {
+  return sites.find((site) => site.id === id);
+}

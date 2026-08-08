@@ -1,5 +1,6 @@
+import Link from "next/link";
 import type { Site } from "@/data/types";
-import { formatUpdateFrequency } from "@/lib/format";
+import { formatList, formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
 import styles from "./SiteCard.module.css";
 
@@ -9,7 +10,9 @@ type SiteCardProps = {
 
 export function SiteCard({ site }: SiteCardProps) {
   return (
-    <a href={site.url} target="_blank" rel="noopener noreferrer" className={styles.card}>
+    <Link href={`/site/${site.id}`} className={styles.card}>
+      {/* eslint-disable-next-line @next/next/no-img-element -- 各社OGP画像をnext/image最適化なしで表示するため */}
+      <img src={site.ogImageUrl} alt="" className={styles.ogImage} />
       <div className={styles.header}>
         {/* eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため */}
         <img src={site.faviconUrl} alt="" className={styles.favicon} />
@@ -19,10 +22,12 @@ export function SiteCard({ site }: SiteCardProps) {
         </div>
       </div>
       <dl className={styles.meta}>
-        <div className={styles.metaRow}>
-          <dt>編集部</dt>
-          <dd>{site.editorialDept.join("、")}</dd>
-        </div>
+        {site.editorialDept && site.editorialDept.length > 0 && (
+          <div className={styles.metaRow}>
+            <dt>編集部</dt>
+            <dd>{formatList(site.editorialDept)}</dd>
+          </div>
+        )}
         <div className={styles.metaRow}>
           <dt>更新頻度</dt>
           <dd>{formatUpdateFrequency(site.updateFrequency)}</dd>
@@ -39,6 +44,6 @@ export function SiteCard({ site }: SiteCardProps) {
         <SiteBadge label="定期購読" active={site.isSubscribe} />
         <SiteBadge label="アプリ" active={site.hasApp} />
       </div>
-    </a>
+    </Link>
   );
 }

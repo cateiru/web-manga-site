@@ -63,8 +63,8 @@
 | `id`                 | string             | サイト ID（例: `"shonenjumpplus"`）                                                    |
 | `name`               | string             | サービス名（例: `"少年ジャンプ+"`）                                                    |
 | `publisher`          | string             | 出版社・運営事業者名（例: `"株式会社集英社"`）                                         |
-| `developer`          | string[]           | 開発元（配信システムを開発する事業者。複数の場合を考慮し配列とする）                   |
-| `editorialDept`      | string[]           | 編集部名（複数編集部が横断的に運営する場合を考慮し配列とする）                         |
+| `developer`          | string[] \| null   | 開発元（配信システムを開発する事業者。複数の場合を考慮し配列とする）。不明・非公開の場合は `null` |
+| `editorialDept`      | string[] \| null   | 編集部名（複数編集部が横断的に運営する場合を考慮し配列とする）。不明・非公開の場合は `null` |
 | `updateFrequency`    | object              | 更新頻度。自然言語の文字列ではなく構造化して持つ（[4.1.1](#411-updatefrequency-の構造)）|
 | `type`               | string             | Web マンガサイトの種別（例: `"出版社型"`, `"書店型"` など）                            |
 | `isLogin`            | boolean            | ログイン機能の有無                                                                     |
@@ -77,6 +77,7 @@
 | `description`        | string             | サイトの説明文                                                                         |
 | `url`                | string             | サイトトップページの URL                                                               |
 | `faviconUrl`         | string             | favicon 画像 URL                                                                        |
+| `ogImageUrl`         | string             | OGP 画像 URL                                                                             |
 | `abjNo`              | string             | 対応する ABJ マーク管理番号（例: `"ABJ 10921006"`）                                    |
 
 #### 4.1.1 `updateFrequency` の構造
@@ -119,6 +120,7 @@
   "description": "『ONE PIECE』などを擁するジャンプが送る、Web発マンガアプリ。",
   "url": "https://shonenjumpplus.com/",
   "faviconUrl": "https://shonenjumpplus.com/favicon.ico",
+  "ogImageUrl": "https://cdn-ak.shonenjumpplus.com/images/ogimage_260803.png",
   "abjNo": "ABJ 10921006"
 }
 ```
@@ -129,6 +131,13 @@
 
 トップページに全掲載サイトをカードグリッドで表示する。
 掲載サイトが 0 件の場合は空状態表示を行う。
+
+### 5.2 サイト詳細
+
+一覧のカードをクリックすると、そのサイトの詳細ページ（`/site/{id}`）へ遷移する。
+詳細ページには一覧では表示していない属性（開発元・ログイン可否・アカウント種別・
+利用SaaS・ABJマーク番号）も含めて表示し、掲載サイトのトップページへの外部リンクを設置する。
+存在しない `id` を指定した場合は 404 を表示する。
 
 ## 6. 画面仕様
 
@@ -147,21 +156,41 @@
 - 説明文
 - 利用可否バッジ（`isPurchase` / `isRental` / `isSubscribe` / `hasApp` に対応する、購入・レンタル・
   定期購読・アプリの有無を示す小さなバッジ）
-- サイトへのリンク（新規タブ遷移、カード全体がリンク）
+- サイト詳細ページへのリンク（[6.2](#62-サイト詳細ページ)、カード全体がリンク）
 
-`developer` / `isLogin` / `loginAccountType` / `saasBrand` はサイトマスタの属性として保持するのみで、
-当面この画面には表示しない。
+`developer` / `isLogin` / `loginAccountType` / `saasBrand` はカードには表示しない
+（[6.2 サイト詳細ページ](#62-サイト詳細ページ)で表示する）。
 
 画面全体の構成:
 
 - ヘッダー（[4.2](./002_design.md)）
 - 掲載サイトカードグリッド（[4.1](./002_design.md)）
-- 掲載サイトが 0 件の場合は空状態表示（[4.3](./002_design.md)）
+- 掲載サイトが 0 件の場合は空状態表示（[4.4](./002_design.md)）
 - フッター（[4.2](./002_design.md)）
 
-### 6.2 空状態
+### 6.2 サイト詳細ページ（`/site/{id}`）
 
-- 掲載サイトが 0 件の場合は空状態表示（[4.3](./002_design.md)）を行う
+サイトごとに次を表示する（[4.3](./002_design.md)）。
+
+- トップページに戻るリンク
+- サービス名・favicon・OGP画像
+- 出版社・開発元・編集部・更新頻度・種別（`type`）
+- ログイン可否・ログインアカウント種別（`loginAccountType`）
+- 利用SaaS（`saasBrand`、`null` の場合は非表示）
+- ABJマーク番号（`abjNo`）
+- 説明文
+- 利用可否バッジ（[6.1](#61-トップページマンガサイト一覧)と同様）
+- 掲載サイトのトップページへの外部リンク（新規タブ遷移）
+
+存在しない `id` の場合は 404（[6.3](#63-404)）を表示する。
+
+### 6.3 404
+
+- 存在しない `id` のサイト詳細ページにアクセスした場合、404 を表示する（[4.4](./002_design.md)）
+
+### 6.4 空状態
+
+- 掲載サイトが 0 件の場合は空状態表示（[4.4](./002_design.md)）を行う
 
 ## 7. 非機能要件
 

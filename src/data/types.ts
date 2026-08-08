@@ -5,7 +5,12 @@ export type UpdateFrequencyUnit = "day" | "week" | "month" | "irregular";
 export type SiteType = "出版社型" | "書店型";
 
 /** ログインに利用できるアカウント種別 */
-export type LoginAccountType = "メールアドレス" | "コミチ" | "集英社ID";
+export type LoginAccountType =
+  | "メールアドレス"
+  | "コミチ"
+  | "集英社ID"
+  | "小学館ID"
+  | "講談社ID";
 
 /** サイトの更新頻度情報 */
 export type UpdateFrequency = {
@@ -29,10 +34,10 @@ export type Site = {
   name: string;
   /** 出版社 */
   publisher: string;
-  /** 開発元（複数の場合あり） */
-  developer: string[];
-  /** 編集部（複数の場合あり） */
-  editorialDept: string[];
+  /** 開発元（複数の場合あり）。不明・非公開の場合は null */
+  developer: string[] | null;
+  /** 編集部（複数の場合あり）。不明・非公開の場合は null */
+  editorialDept: string[] | null;
   /** 更新頻度 */
   updateFrequency: UpdateFrequency;
   /** サイトの種別 */
@@ -57,6 +62,8 @@ export type Site = {
   url: string;
   /** favicon画像のURL */
   faviconUrl: string;
+  /** OGP画像のURL */
+  ogImageUrl: string;
   /** ABJマーク（一般社団法人ABJの認証）の番号 */
   abjNo: string;
 };
