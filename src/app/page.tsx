@@ -1,19 +1,19 @@
-import { getWorks } from "@/lib/data";
-import { WorkCard } from "@/components/WorkCard/WorkCard";
+import { getSites } from "@/lib/data";
+import { SiteCard } from "@/components/SiteCard/SiteCard";
 import { EmptyState } from "@/components/EmptyState/EmptyState";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const works = getWorks();
+  const sites = getSites();
 
   return (
     <div className={styles.container}>
-      {works.length === 0 ? (
-        <EmptyState message="読み切り作品がまだありません。" />
+      {sites.length === 0 ? (
+        <EmptyState message="掲載サイトがまだ登録されていません。" />
       ) : (
         <div className={styles.grid}>
-          {works.map((work) => (
-            <WorkCard key={work.id} work={work} />
+          {sites.map((site) => (
+            <SiteCard key={site.id} site={site} />
           ))}
         </div>
       )}

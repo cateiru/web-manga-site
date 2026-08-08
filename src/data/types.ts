@@ -27,13 +27,3 @@ export type Site = {
   faviconUrl: string;
   abjNo: string;
 };
-
-export type Work = {
-  id: string;
-  title: string;
-  author: string;
-  thumbnailUrl: string | null;
-  siteId: string;
-  workUrl: string;
-  publishedAt: string;
-};

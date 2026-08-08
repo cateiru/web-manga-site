@@ -4,9 +4,8 @@ import { Footer } from "@/components/Footer/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "読み切りマンガ横断ビューア",
-  description:
-    "複数の出版社・Web マンガサイトが掲載している「読み切り」作品を横断的に一覧できるキュレーションサイト。",
+  title: "Webマンガサイト一覧",
+  description: "出版社・事業者が運営する Web マンガサイトを横断的に一覧できるディレクトリサイト。",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
