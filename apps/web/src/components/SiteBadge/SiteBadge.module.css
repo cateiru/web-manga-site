@@ -1,0 +1,18 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border: var(--border-width) solid;
+  border-radius: var(--radius);
+  font: var(--text-xs);
+}
+
+.active {
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+
+.inactive {
+  color: var(--color-ink-40);
+  border-color: var(--color-ink-40);
+}

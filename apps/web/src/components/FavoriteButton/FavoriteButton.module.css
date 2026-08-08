@@ -1,0 +1,21 @@
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-ink);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button[aria-pressed="true"] {
+  color: var(--color-favorite);
+}

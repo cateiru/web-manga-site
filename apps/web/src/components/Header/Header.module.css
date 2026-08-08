@@ -1,0 +1,18 @@
+.header {
+  background: var(--color-bg);
+  border-bottom: var(--border-width-bold) solid var(--color-ink);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-6);
+}
+
+.logo {
+  color: var(--color-ink);
+  font: var(--text-xl);
+}

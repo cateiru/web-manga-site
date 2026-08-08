@@ -1,0 +1,19 @@
+.footer {
+  border-top: var(--border-width) solid var(--color-ink);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-6);
+  color: var(--color-ink-70);
+  font: var(--text-sm);
+}
+
+.inner a {
+  color: var(--color-ink-70);
+  text-decoration: underline;
+}

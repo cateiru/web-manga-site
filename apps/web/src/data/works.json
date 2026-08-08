@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sample-001",
+    "title": "夜明けのラジオ",
+    "author": "架空 太郎",
+    "thumbnailUrl": "https://picsum.photos/seed/manga-sample-001/600/600",
+    "siteId": "shonenjumpplus",
+    "workUrl": "https://example.com/works/sample-001",
+    "publishedAt": "2026-08-05"
+  },
+  {
+    "id": "sample-002",
+    "title": "屋上のネコとぼく",
+    "author": "架空 花子",
+    "thumbnailUrl": null,
+    "siteId": "comic-days",
+    "workUrl": "https://example.com/works/sample-002",
+    "publishedAt": "2026-08-02"
+  },
+  {
+    "id": "sample-003",
+    "title": "商店街の探偵さん",
+    "author": "見本 次郎",
+    "thumbnailUrl": "https://picsum.photos/seed/manga-sample-003/600/600",
+    "siteId": "mangacross",
+    "workUrl": "https://example.com/works/sample-003",
+    "publishedAt": "2026-07-30"
+  },
+  {
+    "id": "sample-004",
+    "title": "夏休みの終わりに",
+    "author": "仮名 三郎",
+    "thumbnailUrl": "https://example.invalid/thumbnails/broken.jpg",
+    "siteId": "kuragebunch",
+    "workUrl": "https://example.com/works/sample-004",
+    "publishedAt": "2026-07-25"
+  },
+  {
+    "id": "sample-005",
+    "title": "アパートの隣人",
+    "author": "架空 花子",
+    "thumbnailUrl": "https://picsum.photos/seed/manga-sample-005/600/600",
+    "siteId": "tonarinoyj",
+    "workUrl": "https://example.com/works/sample-005",
+    "publishedAt": "2026-07-20"
+  },
+  {
+    "id": "sample-006",
+    "title": "雨の日の図書室",
+    "author": "見本 次郎",
+    "thumbnailUrl": null,
+    "siteId": "comic-fuz",
+    "workUrl": "https://example.com/works/sample-006",
+    "publishedAt": "2026-07-15"
+  },
+  {
+    "id": "sample-007",
+    "title": "海辺のパン屋",
+    "author": "仮名 三郎",
+    "thumbnailUrl": "https://picsum.photos/seed/manga-sample-007/600/600",
+    "siteId": "manga-park",
+    "workUrl": "https://example.com/works/sample-007",
+    "publishedAt": "2026-07-10"
+  },
+  {
+    "id": "sample-008",
+    "title": "終電前のふたり",
+    "author": "架空 太郎",
+    "thumbnailUrl": "https://picsum.photos/seed/manga-sample-008/600/600",
+    "siteId": "sunday-webry",
+    "workUrl": "https://example.com/works/sample-008",
+    "publishedAt": "2026-07-01"
+  }
+]

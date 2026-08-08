@@ -1,0 +1,44 @@
+import type { Site } from "@/data/types";
+import { formatUpdateFrequency } from "@/lib/format";
+import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
+import styles from "./SiteCard.module.css";
+
+type SiteCardProps = {
+  site: Site;
+};
+
+export function SiteCard({ site }: SiteCardProps) {
+  return (
+    <a href={site.url} target="_blank" rel="noopener noreferrer" className={styles.card}>
+      <div className={styles.header}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため */}
+        <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        <div>
+          <p className={styles.name}>{site.name}</p>
+          <p className={styles.publisher}>{site.publisher}</p>
+        </div>
+      </div>
+      <dl className={styles.meta}>
+        <div className={styles.metaRow}>
+          <dt>編集部</dt>
+          <dd>{site.editorialDept.join("、")}</dd>
+        </div>
+        <div className={styles.metaRow}>
+          <dt>更新頻度</dt>
+          <dd>{formatUpdateFrequency(site.updateFrequency)}</dd>
+        </div>
+        <div className={styles.metaRow}>
+          <dt>種別</dt>
+          <dd>{site.type}</dd>
+        </div>
+      </dl>
+      <p className={styles.description}>{site.description}</p>
+      <div className={styles.badges}>
+        <SiteBadge label="購入" active={site.isPurchase} />
+        <SiteBadge label="レンタル" active={site.isRental} />
+        <SiteBadge label="定期購読" active={site.isSubscribe} />
+        <SiteBadge label="アプリ" active={site.hasApp} />
+      </div>
+    </a>
+  );
+}
