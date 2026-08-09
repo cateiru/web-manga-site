@@ -26,7 +26,7 @@ export function formatUpdateFrequency(freq: UpdateFrequency): string {
   }
 
   const unitLabel = UNIT_LABELS[freq.unit];
-  const { interval, timesPerInterval, daysOfWeek } = freq;
+  const { interval, timesPerInterval, daysOfWeek, timesOfDay } = freq;
 
   let base: string;
   if (interval === 2 && freq.unit === "week") {
@@ -45,6 +45,10 @@ export function formatUpdateFrequency(freq: UpdateFrequency): string {
 
   if (daysOfWeek && daysOfWeek.length > 0) {
     base += `（${daysOfWeek.map((day) => DAY_LABELS[day] ?? day).join("・")}）`;
+  }
+
+  if (timesOfDay && timesOfDay.length > 0) {
+    base += timesOfDay.join("・");
   }
 
   return `${base}更新`;

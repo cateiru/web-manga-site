@@ -41,8 +41,6 @@ export type Site = {
   publisher: string;
   /** 開発元（複数の場合あり）。不明・非公開の場合は null */
   developer: string[] | null;
-  /** 編集部（複数の場合あり）。不明・非公開の場合は null */
-  editorialDept: string[] | null;
   /** 更新頻度 */
   updateFrequency: UpdateFrequency;
   /** サイトの種別 */

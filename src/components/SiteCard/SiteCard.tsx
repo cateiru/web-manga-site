@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Site } from "@/data/types";
-import { formatList, formatUpdateFrequency } from "@/lib/format";
+import { formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
 import styles from "./SiteCard.module.css";
 
@@ -22,12 +22,6 @@ export function SiteCard({ site }: SiteCardProps) {
         </div>
       </div>
       <dl className={styles.meta}>
-        {site.editorialDept && site.editorialDept.length > 0 && (
-          <div className={styles.metaRow}>
-            <dt>編集部</dt>
-            <dd>{formatList(site.editorialDept)}</dd>
-          </div>
-        )}
         <div className={styles.metaRow}>
           <dt>更新頻度</dt>
           <dd>{formatUpdateFrequency(site.updateFrequency)}</dd>

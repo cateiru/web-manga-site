@@ -6,7 +6,6 @@ export const sites: Site[] = [
     name: "少年ジャンプ＋",
     publisher: "集英社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -25,7 +24,8 @@ export const sites: Site[] = [
     description:
       "アプリなら『ふつうの軽音部』『サンキューピッチ』『ヒトナー』などオリジナル連載が初回全話無料で読める！人気マンガを毎日無料で更新中「少年ジャンプ＋」。",
     url: "https://shonenjumpplus.com/",
-    faviconUrl: "https://cdn-ak.shonenjumpplus.com/images/favicon.ico?1785987060",
+    faviconUrl:
+      "https://cdn-ak.shonenjumpplus.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn-ak.shonenjumpplus.com/images/ogimage_260803.png",
   },
   {
@@ -33,7 +33,6 @@ export const sites: Site[] = [
     name: "マガポケ",
     publisher: "講談社",
     developer: ["株式会社セガ エックスディー"],
-    editorialDept: ["週間少年マガジン", "別冊少年マガジン"],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -60,7 +59,6 @@ export const sites: Site[] = [
     name: "マンガワン",
     publisher: "小学館",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -87,7 +85,6 @@ export const sites: Site[] = [
     name: "コミックDAYS",
     publisher: "講談社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -106,8 +103,10 @@ export const sites: Site[] = [
     description:
       "コミックDAYS公式WEB！ヤンマガ・モーニング・アフタ・Kiss・ビーラブ５誌の格安定期購読に加え、無料で読める毎日更新の名作やオリジナル連載も多数！",
     url: "https://comic-days.com/",
-    faviconUrl: "https://comic-days.com/_next/static/images/favicon.4385e7f9.ico",
-    ogImageUrl: "https://comic-days.com/_next/static/images/ogimage.d822d7c9.png",
+    faviconUrl:
+      "https://comic-days.com/_next/static/images/favicon.4385e7f9.ico",
+    ogImageUrl:
+      "https://comic-days.com/_next/static/images/ogimage.d822d7c9.png",
   },
   {
     id: "5",
@@ -118,7 +117,6 @@ export const sites: Site[] = [
       "and factory 株式会社",
       "株式会社はてな",
     ],
-    editorialDept: ["週間少年サンデー", "ゲッサン", "サンデーGX"],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -129,23 +127,23 @@ export const sites: Site[] = [
     type: "出版社型",
     isLogin: true,
     loginAccountType: ["メールアドレス"],
-    isPurchase: true,
+    isPurchase: false, // アプリでは存在するがWebには存在しないので false
     isRental: false,
-    isSubscribe: true,
+    isSubscribe: false, // アプリでは存在するがWebには存在しないので false
     hasApp: true,
     saasBrand: "GigaViewer",
     description:
       "小学館の「週刊少年サンデー」「ゲッサン」「サンデーＧＸ」３誌が運営する、デジタル上の新漫画サービス。各誌の人気作品はもちろん、ここでしか読めない、必ず楽しめる刺激的な作品を多数掲載！",
     url: "https://www.sunday-webry.com/",
     faviconUrl: "https://cdn.www.sunday-webry.com/images/favicon.ico",
-    ogImageUrl: "https://cdn.www.sunday-webry.com/images/ogimage.png?1785987060",
+    ogImageUrl:
+      "https://cdn.www.sunday-webry.com/images/ogimage.png?1785987060",
   },
   {
     id: "6",
     name: "ヤンジャン＋",
     publisher: "集英社",
     developer: ["and factory株式会社"],
-    editorialDept: ["週刊ヤングジャンプ", "グランドジャンプ", "ウルトラジャンプ"],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -172,15 +170,6 @@ export const sites: Site[] = [
     name: "COMIC FUZ",
     publisher: "芳文社",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: [
-      "まんがタイムきらら",
-      "まんがタイムきららMAX",
-      "まんがタイムきららフォワード",
-      "まんがタイムきららキャラット",
-      "週刊漫画TIMES",
-      "Hanon",
-      "きゃぴ!",
-    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -207,7 +196,6 @@ export const sites: Site[] = [
     name: "マンガUP！",
     publisher: "スクウェア・エニックス",
     developer: ["and factory株式会社", "株式会社Link-U Technologies"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -234,7 +222,6 @@ export const sites: Site[] = [
     name: "フラコミlike！",
     publisher: "小学館",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: ["Sho-Comi", "Cheese!", "ベツコミ", "プチコミック", "flowers"],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -261,18 +248,6 @@ export const sites: Site[] = [
     name: "マンガMee",
     publisher: "集英社",
     developer: ["株式会社Link-U Technologies", "and factory株式会社"],
-    editorialDept: [
-      "りぼん",
-      "マーガレット",
-      "別冊マーガレット",
-      "ココハナ",
-      "クッキー",
-      "デジタルマーガレット",
-      "月刊officeYOU",
-      "メロキス-mellow kiss-",
-      ".Bloom",
-      "君恋",
-    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -299,7 +274,6 @@ export const sites: Site[] = [
     name: "ガンガンONLINE",
     publisher: "スクウェア・エニックス",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -326,7 +300,6 @@ export const sites: Site[] = [
     name: "マンガがうがう",
     publisher: "双葉社",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: ["モンスター編集部"],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -353,7 +326,6 @@ export const sites: Site[] = [
     name: "マンガPark",
     publisher: "白泉社",
     developer: ["株式会社Link-U Technologies", "and factory株式会社"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -363,7 +335,13 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["メールアドレス", "Twitter", "Facebook", "Google", "Apple"],
+    loginAccountType: [
+      "メールアドレス",
+      "Twitter",
+      "Facebook",
+      "Google",
+      "Apple",
+    ],
     isPurchase: true,
     isRental: true,
     isSubscribe: true,
@@ -380,7 +358,6 @@ export const sites: Site[] = [
     name: "ゼブラック",
     publisher: "集英社",
     developer: ["株式会社Link-U Technologies"],
-    editorialDept: null,
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -407,7 +384,6 @@ export const sites: Site[] = [
     name: "となりのヤングジャンプ",
     publisher: "集英社",
     developer: ["株式会社はてな"],
-    editorialDept: ["週刊ヤングジャンプ"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -434,7 +410,6 @@ export const sites: Site[] = [
     name: "&Sofa",
     publisher: "講談社",
     developer: ["株式会社はてな"],
-    editorialDept: ["アフタヌーン"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -461,7 +436,6 @@ export const sites: Site[] = [
     name: "モーニング・ツー",
     publisher: "講談社",
     developer: ["株式会社はてな"],
-    editorialDept: ["モーニング・ツー"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -480,15 +454,16 @@ export const sites: Site[] = [
     description:
       "モーニング・ツーが楽しさそのままWebに登場。人気連載作品からフレッシュな新連載、名作まで無料で楽しめる。毎週木曜更新。",
     url: "https://morningtwo.com",
-    faviconUrl: "https://morningtwo.com/_next/static/images/favicon.74cf862b.ico",
-    ogImageUrl: "https://morningtwo.com/_next/static/images/ogimage.bea3ef0b.png",
+    faviconUrl:
+      "https://morningtwo.com/_next/static/images/favicon.74cf862b.ico",
+    ogImageUrl:
+      "https://morningtwo.com/_next/static/images/ogimage.bea3ef0b.png",
   },
   {
     id: "18",
     name: "月マガ基地",
     publisher: "講談社",
     developer: ["株式会社はてな"],
-    editorialDept: ["月刊少年マガジン"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -515,7 +490,6 @@ export const sites: Site[] = [
     name: "ビブリオシリウス",
     publisher: "講談社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -534,15 +508,16 @@ export const sites: Site[] = [
     description:
       "児童書のコミカライズを中心とした、子どもと児童書ファンのための、親子で楽しめるWeb漫画サイト。毎週金曜日更新。",
     url: "https://bibliosirius.com/",
-    faviconUrl: "https://bibliosirius.com/_next/static/images/favicon.a133936c.ico",
-    ogImageUrl: "https://bibliosirius.com/_next/static/images/ogimage.e6978cd5.jpg",
+    faviconUrl:
+      "https://bibliosirius.com/_next/static/images/favicon.a133936c.ico",
+    ogImageUrl:
+      "https://bibliosirius.com/_next/static/images/ogimage.e6978cd5.jpg",
   },
   {
     id: "20",
     name: "くらげバンチ",
     publisher: "新潮社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -569,7 +544,6 @@ export const sites: Site[] = [
     name: "コミックバンチKai",
     publisher: "新潮社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -598,7 +572,6 @@ export const sites: Site[] = [
     name: "コミックボーダー",
     publisher: "リイド社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -623,9 +596,8 @@ export const sites: Site[] = [
   {
     id: "23",
     name: "コミックガルド",
-    publisher: "オーバーラップ・プラス",
+    publisher: "オーバーラップ",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -652,7 +624,6 @@ export const sites: Site[] = [
     name: "ゼノンプラス",
     publisher: "コアミックス",
     developer: ["株式会社はてな"],
-    editorialDept: ["ゼノン"],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -679,7 +650,6 @@ export const sites: Site[] = [
     name: "マグコミ",
     publisher: "マッグガーデン",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -706,7 +676,6 @@ export const sites: Site[] = [
     name: "webアクション",
     publisher: "双葉社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -725,7 +694,8 @@ export const sites: Site[] = [
     description:
       "双葉社発のマンガ配信サイト「webアクション」。有料話は1話単位でポイント購入可能。毎週火曜と金曜12時更新。",
     url: "https://comic-action.com",
-    faviconUrl: "https://comic-action.com/_next/static/images/favicon.ef027f01.ico",
+    faviconUrl:
+      "https://comic-action.com/_next/static/images/favicon.ef027f01.ico",
     ogImageUrl: "https://comic-action.com/images/ogimage.png",
   },
   {
@@ -733,7 +703,6 @@ export const sites: Site[] = [
     name: "コミックトレイル",
     publisher: "芳文社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -760,7 +729,6 @@ export const sites: Site[] = [
     name: "まんがタイムSquare",
     publisher: "芳文社",
     developer: ["株式会社はてな"],
-    editorialDept: ["まんがタイムオリジナル", "まんがホーム", "まんがタイム"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -787,7 +755,6 @@ export const sites: Site[] = [
     name: "FEEL web",
     publisher: "祥伝社",
     developer: ["株式会社はてな"],
-    editorialDept: ["FEEL YOUNG", "マンガJam", "on BLUE"],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -814,7 +781,6 @@ export const sites: Site[] = [
     name: "COMIC OGYAAA!!",
     publisher: "ホーム社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -833,15 +799,16 @@ export const sites: Site[] = [
     description:
       "無料で読める漫画サイト「コミックオギャー!!」。『邦キチ！映子さん』をはじめ、ギャグ・百合・ネコなどジャンルレスな漫画が勢揃い。",
     url: "https://comic-ogyaaa.com",
-    faviconUrl: "https://comic-ogyaaa.com/_next/static/images/favicon.03f907f5.ico",
-    ogImageUrl: "https://comic-ogyaaa.com/_next/static/images/ogimage.0cb797b2.jpg",
+    faviconUrl:
+      "https://comic-ogyaaa.com/_next/static/images/favicon.03f907f5.ico",
+    ogImageUrl:
+      "https://comic-ogyaaa.com/_next/static/images/ogimage.0cb797b2.jpg",
   },
   {
     id: "31",
     name: "コミック アース・スター",
     publisher: "アース・スター エンターテイメント",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -869,7 +836,6 @@ export const sites: Site[] = [
     name: "OUR FEEL",
     publisher: "シュークリーム",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 2,
@@ -896,7 +862,6 @@ export const sites: Site[] = [
     name: "Seasons",
     publisher: "文藝春秋",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -915,7 +880,8 @@ export const sites: Site[] = [
     description:
       "恋愛ファンタジー、三角関係、不倫劇など心に響く物語が揃う無料Webマンガサイト「Seasons」。文藝春秋の人気小説のコミカライズも掲載。毎週金曜12時更新。",
     url: "https://comic-seasons.com",
-    faviconUrl: "https://comic-seasons.com/_next/static/images/favicon.bb803add.ico",
+    faviconUrl:
+      "https://comic-seasons.com/_next/static/images/favicon.bb803add.ico",
     ogImageUrl: "https://comic-seasons.com/images/ogimage.jpg",
   },
   {
@@ -923,7 +889,6 @@ export const sites: Site[] = [
     name: "一迅プラス",
     publisher: "一迅社",
     developer: ["株式会社はてな"],
-    editorialDept: null,
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -950,7 +915,6 @@ export const sites: Site[] = [
     name: "COMIC Y-OURS",
     publisher: "少年画報社",
     developer: ["株式会社はてな"],
-    editorialDept: ["ヤングキング アワーズ"],
     updateFrequency: {
       unit: "week",
       interval: 1,

@@ -33,12 +33,6 @@ export function SiteDetail({ site }: SiteDetailProps) {
             <dd>{formatList(site.developer)}</dd>
           </div>
         )}
-        {site.editorialDept && site.editorialDept.length > 0 && (
-          <div className={styles.metaRow}>
-            <dt>編集部</dt>
-            <dd>{formatList(site.editorialDept)}</dd>
-          </div>
-        )}
         <div className={styles.metaRow}>
           <dt>更新頻度</dt>
           <dd>{formatUpdateFrequency(site.updateFrequency)}</dd>
@@ -59,10 +53,6 @@ export function SiteDetail({ site }: SiteDetailProps) {
             <dd>{site.saasBrand}</dd>
           </div>
         )}
-        <div className={styles.metaRow}>
-          <dt>ABJマーク番号</dt>
-          <dd>{site.abjNo}</dd>
-        </div>
       </dl>
       <p className={styles.description}>{site.description}</p>
       <div className={styles.badges}>
