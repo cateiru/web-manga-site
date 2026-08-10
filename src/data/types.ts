@@ -15,7 +15,8 @@ export type LoginAccountType =
   | "Apple"
   | "Facebook"
   | "Twitter"
-  | "LINE";
+  | "LINE"
+  | "Yahoo! JAPAN ID";
 
 /** サイトの更新頻度情報 */
 export type UpdateFrequency = {
