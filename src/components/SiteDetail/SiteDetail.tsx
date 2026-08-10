@@ -1,6 +1,7 @@
 import type { Site } from "@/data/types";
 import { formatList, formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
+import { SiteOgImage } from "@/components/SiteOgImage/SiteOgImage";
 import styles from "./SiteDetail.module.css";
 
 type SiteDetailProps = {
@@ -11,12 +12,13 @@ export function SiteDetail({ site }: SiteDetailProps) {
   return (
     <article className={styles.detail}>
       <a href={site.url} target="_blank" rel="noopener noreferrer">
-        {/* eslint-disable-next-line @next/next/no-img-element -- 各社OGP画像をnext/image最適化なしで表示するため */}
-        <img src={site.ogImageUrl} alt="" className={styles.ogImage} />
+        <SiteOgImage site={site} className={styles.ogImage} />
       </a>
       <div className={styles.header}>
-        {/* eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため */}
-        <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        {site.faviconUrl && (
+          // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
+          <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        )}
         <div>
           <h1 className={styles.name}>{site.name}</h1>
           <p className={styles.publisher}>{site.publisher}</p>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Site } from "@/data/types";
 import { formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
+import { SiteOgImage } from "@/components/SiteOgImage/SiteOgImage";
 import styles from "./SiteCard.module.css";
 
 type SiteCardProps = {
@@ -11,11 +12,12 @@ type SiteCardProps = {
 export function SiteCard({ site }: SiteCardProps) {
   return (
     <Link href={`/site/${site.id}`} className={styles.card}>
-      {/* eslint-disable-next-line @next/next/no-img-element -- 各社OGP画像をnext/image最適化なしで表示するため */}
-      <img src={site.ogImageUrl} alt="" className={styles.ogImage} />
+      <SiteOgImage site={site} className={styles.ogImage} />
       <div className={styles.header}>
-        {/* eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため */}
-        <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        {site.faviconUrl && (
+          // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
+          <img src={site.faviconUrl} alt="" className={styles.favicon} />
+        )}
         <div>
           <p className={styles.name}>{site.name}</p>
           <p className={styles.publisher}>{site.publisher}</p>

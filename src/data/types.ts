@@ -64,8 +64,8 @@ export type Site = {
   description: string;
   /** サイトのURL */
   url: string;
-  /** favicon画像のURL */
-  faviconUrl: string;
-  /** OGP画像のURL */
-  ogImageUrl: string;
+  /** favicon画像のURL。取得できない場合は null（非表示にする） */
+  faviconUrl: string | null;
+  /** OGP画像のURL。専用画像が無い場合は null（faviconUrl から生成した画像で代替する） */
+  ogImageUrl: string | null;
 };

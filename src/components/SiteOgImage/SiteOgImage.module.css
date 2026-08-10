@@ -1,0 +1,10 @@
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favicon {
+  width: 32px;
+  height: 32px;
+}

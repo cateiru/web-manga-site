@@ -19,13 +19,15 @@ export async function generateMetadata({
     return {};
   }
 
+  const ogImage = site.ogImageUrl ?? site.faviconUrl;
+
   return {
     title: site.name,
     description: site.description,
     openGraph: {
       title: site.name,
       description: site.description,
-      images: [site.ogImageUrl],
+      images: ogImage ? [ogImage] : undefined,
     },
   };
 }
