@@ -18,7 +18,11 @@ export function SiteDetail({ site }: SiteDetailProps) {
       <div className={styles.header}>
         {site.faviconUrl && (
           // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
-          <img src={site.faviconUrl} alt="" className={styles.favicon} />
+          <img
+            src={`/api/favicon/${site.id}`}
+            alt=""
+            className={styles.favicon}
+          />
         )}
         <div>
           <h1 className={styles.name}>{site.name}</h1>

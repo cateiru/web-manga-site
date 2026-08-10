@@ -16,7 +16,11 @@ export function SiteCard({ site }: SiteCardProps) {
       <div className={styles.header}>
         {site.faviconUrl && (
           // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
-          <img src={site.faviconUrl} alt="" className={styles.favicon} />
+          <img
+            src={`/api/favicon/${site.id}`}
+            alt=""
+            className={styles.favicon}
+          />
         )}
         <div>
           <p className={styles.name}>{site.name}</p>

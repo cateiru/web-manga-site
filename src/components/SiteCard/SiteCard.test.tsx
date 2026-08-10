@@ -48,13 +48,13 @@ describe("SiteCard", () => {
     expect(container.querySelector("img.favicon, [class*='favicon']")).toBeNull();
   });
 
-  it("faviconUrl がある場合は favicon 画像を表示する", () => {
+  it("faviconUrl がある場合は favicon 画像を /api/favicon 経由で表示する", () => {
     const { container } = render(
       <SiteCard site={{ ...baseSite, faviconUrl: "https://example.com/favicon.ico" }} />,
     );
     const images = Array.from(container.querySelectorAll("img"));
     expect(
-      images.some((img) => img.getAttribute("src") === "https://example.com/favicon.ico"),
+      images.some((img) => img.getAttribute("src") === "/api/favicon/test-site"),
     ).toBe(true);
   });
 
