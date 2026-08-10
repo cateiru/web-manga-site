@@ -69,12 +69,6 @@ export function SiteDetail({ site }: SiteDetailProps) {
             {site.isLogin ? site.loginAccountType.join("、") : "ログイン機能なし"}
           </dd>
         </div>
-        {site.saasBrand && (
-          <div className={styles.metaRow}>
-            <dt>配信SaaS</dt>
-            <dd>{site.saasBrand}</dd>
-          </div>
-        )}
       </dl>
       <p className={styles.description}>{site.description}</p>
       <div className={styles.badges}>

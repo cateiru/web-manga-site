@@ -30,7 +30,7 @@ export const UPDATE_FREQUENCY_UNITS: { key: UpdateFrequencyUnit; label: string }
 
 /**
  * 検索の絞り込み条件。
- * - types / loginAccountTypes / developers / saasBrands / updateFrequencyUnits: OR
+ * - types / loginAccountTypes / developers / updateFrequencyUnits: OR
  *   （空配列は「絞り込まない」を表す）
  * - usageFlags: AND（空配列は「絞り込まない」を表す）
  * - isLogin: 完全一致（null は「絞り込まない」を表す）
@@ -41,7 +41,6 @@ export type SearchFilter = {
   isLogin: boolean | null;
   loginAccountTypes: LoginAccountType[];
   developers: string[];
-  saasBrands: string[];
   updateFrequencyUnits: UpdateFrequencyUnit[];
 };
 
@@ -90,17 +89,6 @@ export function getDevelopers(): string[] {
   ].sort((a, b) => a.localeCompare(b, "ja"));
 }
 
-/** 掲載サイトが利用している配信 SaaS ブランドを、ja ロケールの文字列順で返す（自社独自システムの null は含まない） */
-export function getSaasBrands(): string[] {
-  return [
-    ...new Set(
-      sites
-        .map((site) => site.saasBrand)
-        .filter((brand): brand is string => brand !== null),
-    ),
-  ].sort((a, b) => a.localeCompare(b, "ja"));
-}
-
 /** 掲載サイトが存在する更新頻度の単位を、UPDATE_FREQUENCY_UNITS の順に返す */
 export function getUpdateFrequencyUnits(): UpdateFrequencyUnit[] {
   const present = new Set(sites.map((site) => site.updateFrequency.unit));
@@ -127,9 +115,6 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
       (site.developer ?? []).some((developer) =>
         filter.developers.includes(developer.name),
       );
-    const matchesSaasBrand =
-      filter.saasBrands.length === 0 ||
-      (site.saasBrand !== null && filter.saasBrands.includes(site.saasBrand));
     const matchesUpdateFrequency =
       filter.updateFrequencyUnits.length === 0 ||
       filter.updateFrequencyUnits.includes(site.updateFrequency.unit);
@@ -140,7 +125,6 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
       matchesLogin &&
       matchesLoginAccountType &&
       matchesDeveloper &&
-      matchesSaasBrand &&
       matchesUpdateFrequency
     );
   });
@@ -156,14 +140,12 @@ export function parseSearchFilter(searchParams: {
   login?: string | string[];
   loginAccountType?: string | string[];
   developer?: string | string[];
-  saasBrand?: string | string[];
   frequency?: string | string[];
 }): SearchFilter {
   const knownTypes = new Set(getSiteTypes());
   const knownUsageFlags = new Set(USAGE_FLAGS.map((flag) => flag.key));
   const knownLoginAccountTypes = new Set(getLoginAccountTypes());
   const knownDevelopers = new Set(getDevelopers());
-  const knownSaasBrands = new Set(getSaasBrands());
   const knownUpdateFrequencyUnits = new Set(getUpdateFrequencyUnits());
 
   const toArray = (value: string | string[] | undefined): string[] =>
@@ -184,9 +166,6 @@ export function parseSearchFilter(searchParams: {
   const developers = toArray(searchParams.developer).filter((value) =>
     knownDevelopers.has(value),
   );
-  const saasBrands = toArray(searchParams.saasBrand).filter((value) =>
-    knownSaasBrands.has(value),
-  );
   const updateFrequencyUnits = toArray(searchParams.frequency).filter(
     (value): value is UpdateFrequencyUnit =>
       knownUpdateFrequencyUnits.has(value as UpdateFrequencyUnit),
@@ -201,7 +180,6 @@ export function parseSearchFilter(searchParams: {
     isLogin,
     loginAccountTypes,
     developers,
-    saasBrands,
     updateFrequencyUnits,
   };
 }

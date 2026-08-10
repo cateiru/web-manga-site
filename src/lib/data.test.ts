@@ -3,7 +3,6 @@ import {
   getDevelopers,
   getLoginAccountTypes,
   getPublishers,
-  getSaasBrands,
   getSiteById,
   getSites,
   getSitesByPublisher,
@@ -23,7 +22,6 @@ const EMPTY_FILTER: SearchFilter = {
   isLogin: null,
   loginAccountTypes: [],
   developers: [],
-  saasBrands: [],
   updateFrequencyUnits: [],
 };
 
@@ -124,16 +122,6 @@ describe("getDevelopers", () => {
   });
 });
 
-describe("getSaasBrands", () => {
-  it("重複のない配信SaaSブランド一覧を ja ロケールの文字列順で返す（null は含まない）", () => {
-    const brands = getSaasBrands();
-    expect(new Set(brands).size).toBe(brands.length);
-
-    const sorted = [...brands].sort((a, b) => a.localeCompare(b, "ja"));
-    expect(brands).toEqual(sorted);
-  });
-});
-
 describe("getUpdateFrequencyUnits", () => {
   it("掲載サイトが存在する更新頻度の単位のみを UPDATE_FREQUENCY_UNITS の順に返す", () => {
     const units = getUpdateFrequencyUnits();
@@ -202,15 +190,6 @@ describe("getSitesBySearch", () => {
     }
   });
 
-  it("配信SaaSは OR で絞り込む", () => {
-    const [saasBrand] = getSaasBrands();
-    const sites = getSitesBySearch({ ...EMPTY_FILTER, saasBrands: [saasBrand] });
-    expect(sites.length).toBeGreaterThan(0);
-    for (const site of sites) {
-      expect(site.saasBrand).toBe(saasBrand);
-    }
-  });
-
   it("更新頻度の単位は OR で絞り込む", () => {
     const [unit] = getUpdateFrequencyUnits();
     const sites = getSitesBySearch({ ...EMPTY_FILTER, updateFrequencyUnits: [unit] });
@@ -275,24 +254,21 @@ describe("parseSearchFilter", () => {
     expect(parseSearchFilter({ login: "__not_exist__" })).toEqual(EMPTY_FILTER);
   });
 
-  it("ログイン種別・開発元・配信SaaS・更新頻度の単位を解決する", () => {
+  it("ログイン種別・開発元・更新頻度の単位を解決する", () => {
     const [loginAccountType] = getLoginAccountTypes();
     const [developer] = getDevelopers();
-    const [saasBrand] = getSaasBrands();
     const [unit] = getUpdateFrequencyUnits();
 
     expect(
       parseSearchFilter({
         loginAccountType,
         developer,
-        saasBrand,
         frequency: unit,
       }),
     ).toEqual({
       ...EMPTY_FILTER,
       loginAccountTypes: [loginAccountType],
       developers: [developer],
-      saasBrands: [saasBrand],
       updateFrequencyUnits: [unit],
     });
   });
@@ -304,7 +280,6 @@ describe("parseSearchFilter", () => {
         usage: "__not_exist__",
         loginAccountType: "__not_exist__",
         developer: "__not_exist__",
-        saasBrand: "__not_exist__",
         frequency: "__not_exist__",
       }),
     ).toEqual(EMPTY_FILTER);

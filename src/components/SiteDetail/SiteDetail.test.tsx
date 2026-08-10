@@ -22,7 +22,6 @@ const baseSite: Site = {
   isRental: false,
   isSubscribe: true,
   hasApp: false,
-  saasBrand: null,
   description: "テスト用の説明文です。",
   url: "https://example.com",
   faviconUrl: null,
@@ -71,12 +70,6 @@ describe("SiteDetail", () => {
     const linkB = screen.getByRole("link", { name: "開発元B" });
     expect(linkA.getAttribute("href")).toBe("https://a.example.com");
     expect(linkB.getAttribute("href")).toBe("https://b.example.com");
-  });
-
-  it("saasBrand がある場合は配信SaaSを表示する", () => {
-    render(<SiteDetail site={{ ...baseSite, saasBrand: "テストSaaS" }} />);
-    expect(screen.getByText("配信SaaS")).toBeDefined();
-    expect(screen.getByText("テストSaaS")).toBeDefined();
   });
 
   it("サイトを見るリンクが url を指している", () => {

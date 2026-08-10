@@ -20,7 +20,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "アプリなら『ふつうの軽音部』『サンキューピッチ』『ヒトナー』などオリジナル連載が初回全話無料で読める！人気マンガを毎日無料で更新中「少年ジャンプ＋」。",
     url: "https://shonenjumpplus.com/",
@@ -47,7 +46,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "マンガアプリ「マガポケ」公式WEB！ ここでしか読めない話題のオリジナル漫画に、「週刊少年マガジン」「別冊少年マガジン」の名作・連載作品まで無料で楽しめる！",
     url: "https://pocket.shonenmagazine.com/",
@@ -73,7 +71,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "小学館の漫画が読める総合webコミックサイト「モブサイコ」「ケンガンアシュラ」などマンガワンオリジナル作品を多数掲載。まんが雑誌「サンデー」「スピリッツ」「スペリオール」「ちゃお」「flowers」などの連載作品等も読める！",
     url: "https://manga-one.com/",
@@ -99,7 +96,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "コミックDAYS公式WEB！ヤンマガ・モーニング・アフタ・Kiss・ビーラブ５誌の格安定期購読に加え、無料で読める毎日更新の名作やオリジナル連載も多数！",
     url: "https://comic-days.com/",
@@ -131,7 +127,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false, // アプリでは存在するがWebには存在しないので false
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "小学館の「週刊少年サンデー」「ゲッサン」「サンデーＧＸ」３誌が運営する、デジタル上の新漫画サービス。各誌の人気作品はもちろん、ここでしか読めない、必ず楽しめる刺激的な作品を多数掲載！",
     url: "https://www.sunday-webry.com/",
@@ -158,7 +153,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "ヤングジャンプをはじめとする集英社公式・ジャンプ系青年マンガ誌総合サイトです。多彩な漫画・グラビアコンテンツを配信中！",
     url: "https://ynjn.jp/",
@@ -184,7 +178,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "芳文社公式まんがサービス！COMIC FUZオリジナルの作品多数掲載！さらに「ゆるキャン△」「まちカドまぞく」などの人気作のほか「まんがタイムきらら」「週刊漫画TIMES」などの作品も毎日無料で読める！アニメ化作品も多数掲載！",
     url: "https://comic-fuz.com/",
@@ -213,7 +206,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "無料漫画や新作コミックを今すぐ読むならマンガＵＰ！名作・新作760タイトル以上！スクウェア・エニックスの人気連載漫画も無料で読めるマンガアプリ！",
     url: "https://www.manga-up.com/",
@@ -239,7 +231,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "毎日無料でまんがが読める 小学館の総合Webコミックサイト！「ミステリと言う勿れ」「BANANA FISH」「主人恋日記」など人気約900作を配信中！",
     url: "https://flowercomics.jp/",
@@ -268,7 +259,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "無料で読めるマンガアプリ「マンガMee(マンガミー)」！集英社の名作コミックはもちろん、アニメ化・ドラマ化の話題作、連載中の作品やオリジナルの新作、キュンとする、泣ける、スカッとする作品に出会える漫画サイト！連載作家も随時募集中！",
     url: "https://manga-mee.jp/",
@@ -294,7 +284,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "購読無料・登録不要のwebマンガ雑誌! 「わたしの幸せな結婚」「私がモテないのはどう考えてもお前らが悪い!」「月刊少女野崎くん」「アホリズム」「転生賢者の異世界ライフ～第二の職業を得て、世界最強になりました～」など続々掲載",
     url: "https://www.ganganonline.com/",
@@ -320,7 +309,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "「小説家になろう」「カクヨム」作品などを刊行するモンスターコミックスを中心とした双葉社の作品をどこよりも早くお届け！異世界漫画、悪役令嬢まんが、アニメ化作品などが基本無料で楽しめる、双葉社発の漫画アプリ！",
     url: "https://gaugau.futabanet.jp/list/app",
@@ -355,7 +343,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "マンガも！声優ラジオも！アイドル動画も！全部無料で楽しめる 総合エンタメアプリ「マンガPark（マンガパーク）」",
     url: "https://manga-park.com/",
@@ -381,7 +368,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "少年マンガ、少女マンガ、青年マンガ、ライトノベル、雑誌がつまった総合電子書店。23時間ごとに無料で「話読み」できる作品も続々登場！",
     url: "https://zebrack-comic.shueisha.co.jp/",
@@ -407,7 +393,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "週刊ヤングジャンプ編集部が運営する無料Webマンガサイト。編集部が厳選したオリジナル漫画と、ヤンジャン作品の試し読みが楽しめる。",
     url: "https://www.tonarinoyj.jp/",
@@ -433,7 +418,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "アフタヌーン編集部がお届けするWeb漫画サイト。オリジナル漫画連載、コラムや小説、「アフタヌーン」連載作品が無料で楽しめる。毎週月曜12時更新。",
     url: "https://andsofa.com",
@@ -459,7 +443,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "モーニング・ツーが楽しさそのままWebに登場。人気連載作品からフレッシュな新連載、名作まで無料で楽しめる。毎週木曜更新。",
     url: "https://morningtwo.com",
@@ -487,7 +470,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "月刊少年マガジン編集部がおくるWeb漫画サイト。オリジナル作品や月マガ作品が読める。毎週火曜・金曜正午更新。",
     url: "https://getsumagakichi.com/",
@@ -513,7 +495,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "児童書のコミカライズを中心とした、子どもと児童書ファンのための、親子で楽しめるWeb漫画サイト。毎週金曜日更新。",
     url: "https://bibliosirius.com/",
@@ -541,7 +522,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "新潮社がお届けするWEBマンガサイト。毎週火曜日・金曜日更新、話題作を無料で読める。有料話は1話単位でポイント購入可能。",
     url: "https://kuragebunch.com/",
@@ -567,7 +547,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "王道と革新のWEB漫画誌「コミックバンチKai」。くらげバンチと共通のアカウントで利用可能。毎週金曜日正午更新。",
     url: "https://comicbunch-kai.com",
@@ -595,7 +574,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "リイド社がお届けするWEB漫画サイト「コミックボーダー」。ちょっとした時間の「境目」に楽しめる作品を毎週金曜12時更新。",
     url: "https://comicborder.com",
@@ -621,7 +599,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "オーバーラップ発のWEBコミック誌「コミックガルド」。1話単位・コミックス単位でポイント購入可能。毎日12時更新。",
     url: "https://comic-gardo.com",
@@ -647,7 +624,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: "GigaViewer",
     description:
       "コアミックスがお届けするWEB漫画サイト「ゼノンプラス」。話題作・人気作が毎日12時更新。",
     url: "https://comic-zenon.com",
@@ -673,7 +649,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "マッグガーデン発のWEBマンガサイト「マグコミ」。月額500円のプレミアム会員になると対象作品の最新話を先読みできる。毎週火曜日・金曜日更新。",
     url: "https://magcomi.com",
@@ -699,7 +674,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "双葉社発のマンガ配信サイト「webアクション」。有料話は1話単位でポイント購入可能。毎週火曜と金曜12時更新。",
     url: "https://comic-action.com",
@@ -726,7 +700,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "完全無料のWEBマンガサイト「コミックトレイル」。作品とつながる、盛り上がる、マンガのフェス空間。毎週金曜日更新。",
     url: "https://comic-trail.com",
@@ -752,7 +725,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "芳文社「まんがタイム」の今が集まる公式Web漫画サイト。オリジナル・ホーム・タイム3誌の注目作品を毎週金曜日に更新。",
     url: "https://mangatime-square.com/",
@@ -778,7 +750,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "『FEEL YOUNG』『マンガJam』『on BLUE』『SHODENSHA COMICS』の作品が揃う無料マンガサイト「FEEL web」。毎週金曜12時更新。",
     url: "https://feelweb.jp",
@@ -804,7 +775,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "無料で読める漫画サイト「コミックオギャー!!」。『邦キチ！映子さん』をはじめ、ギャグ・百合・ネコなどジャンルレスな漫画が勢揃い。",
     url: "https://comic-ogyaaa.com",
@@ -832,7 +802,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "アニメ化で話題のマンガが会員登録不要・アプリ不要・無料ですぐ読めるWEBコミック誌「コミック アース・スター」。有料話の購入には無料会員登録が必要。毎週木曜更新。",
     url: "https://comic-earthstar.com/",
@@ -859,7 +828,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "株式会社シュークリームが贈る女性向けマンガレーベル「OUR FEEL（アワフィール）」。第1・3木曜日更新。",
     url: "https://ourfeel.jp",
@@ -885,7 +853,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "恋愛ファンタジー、三角関係、不倫劇など心に響く物語が揃う無料Webマンガサイト「Seasons」。文藝春秋の人気小説のコミカライズも掲載。毎週金曜12時更新。",
     url: "https://comic-seasons.com",
@@ -912,7 +879,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "一迅社の公式Webマンガサイト「一迅プラス」。異世界ファンタジー・ラブコメ・サスペンス・ホラー・百合・BL・TLと多彩なジャンルの漫画が楽しめる。ほぼ毎日更新。",
     url: "https://ichicomi.com",
@@ -938,7 +904,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "GigaViewer",
     description:
       "少年画報社発の無料で読めるWeb漫画サイト「COMIC Y-OURS」。『ヤングキング アワーズ』連載作をはじめ、不朽の名作まで勢揃い。毎週火曜日・金曜日更新。",
     url: "https://comic-y-ours.com/",
@@ -959,12 +924,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "秋田書店が運営するWebマンガサイト・チャンピオンクロス。毎日更新、新作も読み逃した作品も続々登場！無料キャンペーンも多数開催！『僕の心のヤバイやつ』・『刃牙』シリーズ・『弱虫ペダル』・『魔入りました！入間くん』など話題作も目白押し!!",
     url: "https://championcross.jp/",
@@ -987,12 +951,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "ヤングチャンピオンWebへ、ようこそ！ヤンチャンWebでは、人気マンガやグラビアが毎日無料！アナタの日常を満たすオールジャンルエンタメサイトです。OUT・僕の心のヤバイやつ・片田舎のおっさん、剣聖になるなどたくさんのマンガが読めます。",
     url: "https://youngchampion.jp/",
@@ -1015,12 +978,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "ヤングアニマルWebは、基本無料でマンガもグラビアも読めます。『ベルセルク』（三浦建太郎）、『3月のライオン』（羽海野チカ）、『ふたりエッチ』（克・亜樹）などのマンガが基本全話無料でお楽しみいただけます。",
     url: "https://younganimal.com/",
@@ -1043,12 +1005,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "『劇場版 モノノ怪』『超かぐや姫！』のツインエンジンが送り出すオールジャンル新世代漫画レーベル！ビビッとくる作品が無料で沢山読める！",
     url: "https://bibibi-comic.com/",
@@ -1071,12 +1032,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが毎週更新！『鬼の花嫁』『引きこもり令嬢は皇妃になんてなりたくない！～強面皇帝の溺愛が駄々漏れで困ります～』『－50㎏のシンデレラ』『修学旅行で仲良くないグループに入りました』など、女性向けマンガが大集合！",
     url: "https://comirela.com/",
@@ -1099,12 +1059,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "ジーオーティーの漫画が無料で読める総合コミックサイト「Gコミ」。青年コミックを中心としたMeDu、フェチレーベルNOiPA、BLレーベルpicnが集まり、あなたの「好き」が見つかります。",
     url: "https://g-comi.jp/",
@@ -1127,12 +1086,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "多彩なジャンルのマンガを無料で読むならなみコミ！『茉莉花ちゃんの好感度はぶっ壊れている』『ドライな同期の溺愛癖』などの人気作が読める！ラブコメ、異世界転生、BL、ファンタジーなど幅広い作品を掲載し、新たな面白さとの出会いをお届けします。",
     url: "https://namicomic.jp/",
@@ -1155,12 +1113,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "HERO'S Web（ヒーローズウェブ）公式サイト。毎日更新のマンガサイト！多彩な作品が無料で読める。",
     url: "https://heros-web.com/",
@@ -1183,12 +1140,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料で楽しめる花とゆめ公式まんがサイト。『多聞くん今どっち!?』『春の嵐とモンスター』『神さま学校の落ちこぼれ』など人気作の最新話やレジェンド作品を配信中！",
     url: "https://hanayume.com/",
@@ -1211,12 +1167,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description: "エンタメを知り尽くしたぴあが贈る、WEBコミック！",
     url: "https://piacomic.jp/",
     faviconUrl:
@@ -1238,12 +1193,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが毎週更新！バトル、恋愛、異世界、令嬢など様々なジャンルの人気作品が大集結！あなたの求める刺激がここにある。",
     url: "https://comic-room-base.com/",
@@ -1266,12 +1220,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description: "竹書房の新作マンガが毎日更新・無料で読める「竹コミ！」。",
     url: "https://takecomic.jp/",
     faviconUrl:
@@ -1293,12 +1246,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料でマンガが読める！扶桑社のwebコミックサイト。『孤独のグルメ』『アラサーちゃん』『少年イン・ザ・フッド』などドラマ化、話題作のほか、ここでしか読めない新連載も続々配信中！",
     url: "https://mangaspa.nikkan-spa.jp/",
@@ -1321,12 +1273,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが毎日更新！異世界・恋愛・ファンタジー・バトル・令嬢・セクシー・美少女・百合を今すぐ読める総合サイト【キミコミ】。コミックヴァルキリー・ブリーゼ・シャイニー・ヤングアンリアルJINGAIが集結！最新話も続々更新中！",
     url: "https://kimicomi.com/",
@@ -1349,12 +1300,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが毎週更新！『不運からの最強男』『受付嬢に告白したくてギルドに通いつめたら英雄になってた』など、異世界マンガが大集結！コミックグラストの最新話を読むならここ！",
     url: "https://manga-zegra.com/",
@@ -1377,12 +1327,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "マンガ＋オルタナティブ（新しい選択肢と可能性）＝マンガルト。「リイドカフェ」「トーチweb」「コミックボーダー」「コミック乱」「コミック乱ツインズ」「STUNNER」など、リイド社のマンガ作品を集めたデジタルコミックライブラリです。",
     url: "https://mangalt.jp/",
@@ -1405,12 +1354,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "異世界漫画から「魔法使いの嫁」を始めとしたオリジナル作品、「ヴァンガード」「ブルーアーカイブ」などのコミカライズ作品まで、ここでしか読めないマンガがいっぱい！",
     url: "https://comic-growl.com/",
@@ -1433,12 +1381,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが続々！朝日新聞出版のwebコミックサイト。『百鬼夜行抄』『初めての彼女 最後の彼』『ある設計士の忌録』をはじめ、ホラー、恋愛、ファンタジーなどの作品を掲載！",
     url: "https://asacomi.jp/",
@@ -1461,12 +1408,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガがほぼ毎日更新！『くまクマ熊ベアー』『妃教育から逃げたい私』『婚約破棄された令嬢を拾った俺が、イケナイことを教え込む』など、アニメ化作品や話題作品が続々!!",
     url: "https://comicpash.jp/",
@@ -1489,12 +1435,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが沢山ある実業之日本社のwebコミックサイト。『霧尾ファンクラブ』『ねこねこ日本史』『特別じゃない日』をはじめ、異世界転生、悪役令嬢、百合など多彩な作品を掲載！",
     url: "https://comic.j-nbooks.jp/",
@@ -1517,12 +1462,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "『ソラリス』『そして誰もいなくなった』『同志少女よ、敵を撃て』をはじめとした名作・話題作を配信中！早川書房のSF・ミステリ作品のコミカライズ＆オリジナルコミックを集めたマンガサイト。",
     url: "https://hayacomic.jp/",
@@ -1545,12 +1489,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "関西・東海・西日本の作家さんを中心に新たなマンガ文化を発信するWEB雑誌「マグカン」！人気マンガを毎日無料でお楽しみいただけます。",
     url: "https://kansai.mag-garden.co.jp/",
@@ -1573,12 +1516,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "「ライド」「アドバンス」「ivy」「ELMO」「Rouge」……マイクロマガジン社が誇る5レーベルが、一堂に会するマンガポータルサイト『ライコミ（コミックライド）』誕生!!無料話も多数読めちゃう!!",
     url: "https://comicride.jp/",
@@ -1601,12 +1543,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "マンガBANG！から生まれたマンガBANGコミックスの公式サイトです。色んなジャンルのマンガがどこよりも早く、毎日無料で読めます！！",
     url: "https://comics.manga-bang.com/",
@@ -1629,12 +1570,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "booklistaSTUDIO（ブックリスタスタジオ）では、国内外のパートナー企業やクリエイターの皆様とともに、タテ読みフルカラーコミックをはじめとするコンテンツ制作・プロデュースを行っています。日本初のウェブトゥーン制作スタジオによるWEBマンガ誌。",
     url: "https://studio.booklista.co.jp/",
@@ -1657,12 +1597,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "コルクスタジオストアのマンガは、未知の感情に出会えるような、「心を描き出す物語」であふれています。個性豊かなキャラクターたちと共に、「好き」を深める旅に出かけませんか？最強の縦スクロールWebマンガ誌。",
     url: "https://ebookstore.corkagency.com/",
@@ -1685,12 +1624,11 @@ export const sites: Site[] = [
     },
     type: "出版社型",
     isLogin: true,
-    loginAccountType: ["コミチ"],
+    loginAccountType: ["コミチID"],
     isPurchase: false,
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "コミチが手がけるコミチコミックスの一つ「comic Bro」。新作から人気のブロマンス作品が大集結！",
     url: "https://comics.comici.jp/comicbro",
@@ -1718,7 +1656,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "小学館・青年漫画誌5誌のWeb漫画サイト『ビッコミ』。「週刊ビッグコミックスピリッツ」「月刊！スピリッツ」「ビッグコミックスペリオール」「ビッグコミック」「ビッグコミックオリジナル」のマンガが基本無料で試し読みできます。",
     url: "https://bigcomics.jp/",
@@ -1746,7 +1683,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: "コミチ＋",
     description:
       "無料マンガが毎日更新！『ハニーレモンソーダ』『ピンクとハバネロ』『太陽よりも眩しい星』をはじめとした人気作の最新話を配信中！集英社の少女・女性向けマンガ作品を集めた総合配信サイト「リマコミ＋」。",
     url: "https://rimacomiplus.jp/",
@@ -1774,7 +1710,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "エレガンスイブ編集部が送る登録不要＆無料のマンガサイト。「凪のお暇」「酔うと化け物になる父がつらい」「酒と恋には酔って然るべき」など、話題作が読めます。",
     url: "https://souffle.life/",
@@ -1801,7 +1736,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "好奇心の扉を開く、癒やしと不思議が満載のWEBコミックサイト「COMICポルタ」。毎月第2・4金曜日更新！",
     url: "https://comic-porta.com/",
@@ -1829,7 +1763,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "ゼロサム系女子のための新しいオンラインマガジン、ゼロサムオンライン。新作コミック＆コラボ企画を続々掲載予定！ゼロサムならではのハイクオリティで贈る空前のオンラインコミック！",
     url: "https://zerosumonline.com/",
@@ -1855,7 +1788,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "文化・暮らし・景観などの岩手の魅力を、マンガの力を使って県公式で世界に発信！",
     url: "http://comiciwate.jp/",
@@ -1887,7 +1819,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "マンガを無料で読むならcomico（コミコ）！オリジナルのタテカラー漫画から定番のコミックス、投稿作品まで豊富に取り揃え！お得なキャンペーンも毎日実施中！",
     url: "https://www.comico.jp/",
@@ -1913,7 +1844,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "新作コミックが好評連載中☆山本直樹「田舎」、志村貴子「淡島百景」、雁須磨子「あした死ぬには、」、田中圭一「夏のモンド」ほか、最新話は完全無料で読めます！",
     url: "https://webcomic.ohtabooks.com/",
@@ -1946,7 +1876,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "無料漫画60,598作品2,381,243話以上を読み放題！期間限定の全巻無料・全話無料も！話題のまんが・小説・電子書籍を無料で読むならピッコマで！",
     url: "https://piccoma.com/web/",
@@ -1973,7 +1902,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description: "おもしろさ無限大。Gakken発エンタメ漫画サイト。",
     url: "https://nora.gakken.jp/",
     faviconUrl:
@@ -2000,7 +1928,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "Webでもアプリでも読めるKADOKAWAのオリジナル無料漫画連載が勢揃い！異世界コミックやFLOS COMICなどの、人気漫画レーベルが集結！",
     url: "https://comic-walker.com/",
@@ -2026,7 +1953,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "コミ劇では大人気コミックエッセイがいつでも無料で読み放題！大ヒット猫マンガから、映像化された話題作、美容・ダイエット、旅行、出産・子育て、ライフスタイルまで、あなたが読みたいテーマや作品が必ず見つかります！",
     url: "https://www.comic-essay.com/",
@@ -2054,7 +1980,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "株式会社KADOKAWAによるBLコミックサイト。登録不要＆無料で読めます！毎週水曜日更新！新刊やイベント、特典などの情報もお届けします。",
     url: "https://comic.mf-fleur.jp/",
@@ -2081,7 +2006,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "漫画ファンのための無料エンタテイメント・サイト「漫画街 MANGA-GAI」。",
     url: "http://www.manga-gai.net/",
@@ -2107,7 +2031,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "さらに面白く、さらに読みやすく――webマンガサイトを《加速》させるcomicブースト。",
     url: "https://comic-boost.com/",
@@ -2133,7 +2056,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "「もう一度、読みたくなる」光文社のwebマンガサイト！完全無料、毎週金曜更新！個性的なマンガをお届けします！",
     url: "https://www.comicnettai.com/",
@@ -2161,7 +2083,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description: "コミチのオリジナルマンガ配信中！コミチコミックス。",
     url: "https://comics.comici.jp/",
     faviconUrl:
@@ -2188,7 +2109,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "『TSUYOSHI』や『明日、私は誰かのカノジョ』など人気のオリジナルコミックが毎日無料で読める！サイコミ。",
     url: "https://cycomi.com/",
@@ -2214,7 +2134,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description: "無料で読める漫画・4コマサイト「パチクリ！」。",
     url: "https://pachikuri.jp/",
     faviconUrl: "https://pachikuri.jp/wp-content/themes/pachikuri/icon.ico",
@@ -2239,7 +2158,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "やわらかスピリッツは小学館がお届けする無料webマンガサイトです。",
     url: "https://yawaspi.com/",
@@ -2270,7 +2188,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "小学館「ちゃお」公式サイト。毎日更新の無料まんがや記事、動画がたっぷり楽しめるよ！",
     url: "https://ciao.shogakukan.co.jp/",
@@ -2298,7 +2215,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "無料で読める漫画がたくさん！コロコロ編集部が運営する総合エンタメサイト！",
     url: "https://corocoro.jp/",
@@ -2324,7 +2240,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "雑誌「ウィングス」の姉妹誌として開設された、新書館の無料WEBコミックサイト。",
     url: "https://www.shinshokan.com/webwings/",
@@ -2350,7 +2265,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "「栞」は大洋図書から発信するオールジャンルのWEBまんがサイトです。「栞」でしか読めないオリジナル作品も豊富に揃えておりプロ・アマを問わず幅広い漫画を閲覧できます。",
     url: "https://shiori-on.com/",
@@ -2377,7 +2291,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: null,
     description:
       "TOブックスの公式Web漫画サイト、コロナEX。「本好きの下剋上」「ティアムーン帝国物語」など、人気作や話題作、新作が読める！",
     url: "https://to-corona-ex.com/",
@@ -2403,7 +2316,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "編集家・竹熊健太郎が漫画界発展を願い、新人発掘と電子メディアの可能性を実験するために立ちあげた無料オンライン・コミック・マガジン。",
     url: "https://mavo.takekuma.jp/",
@@ -2429,7 +2341,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "面白ければ何でもアリ！徳間書店のWebマンガサイト「COMICリュウ」。",
     url: "https://comic-ryu.jp/",
@@ -2457,7 +2368,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "異世界ファンタジーラノベのコミカライズ専門のWEBサイト「COMICユニコーン」。",
     url: "https://unicorn.comic-ryu.jp/",
@@ -2485,7 +2395,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "毎週金曜日更新！登録不要＆無料、日本文芸社の公式Webまんがサイト！",
     url: "https://gorakuweb.com/",
@@ -2511,7 +2420,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "パイインターナショナルが送る、創造的情熱震源地「PIE COMICS」。",
     url: "https://comics.pie.co.jp/",
@@ -2539,7 +2447,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "複数のウェブコミック誌を運営する、ピクシブのマンガ総合サイト「pixivコミック」。",
     url: "https://comic.pixiv.net/",
@@ -2565,7 +2472,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "人気の漫画がカラーで読める！新作が無料で読める！縦スクロールだから楽々読める！",
     url: "https://vcomi.jp/",
@@ -2591,7 +2497,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "メテオ・ポラリス・アンブル・エトワール・アスティル・ズレット！の漫画（マンガ）が無料で読める公式WEBマンガサイト。",
     url: "https://kirapo.jp/",
@@ -2617,7 +2522,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "復讐サスペンス、話題の実写ドラマ化作品、異世界ファンタジーまで、株式会社ぶんか社＆海王社の幅広いラインナップが読める無料マンガサイト。毎週火曜・金曜の12時更新！",
     url: "https://www.yomonga.com/",
@@ -2645,7 +2549,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: null,
     description:
       "HJ文庫・HJノベルス・コミックファイアの公式総合ポータルサイト。新刊情報やニュースはもちろん、かんたん無料登録で人気のマンガやライトノベルが読める！",
     url: "https://firecross.jp/",
@@ -2671,7 +2574,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "Web上にある架空の“MANGA”リゾート・サイト。株式会社マガジンハウスが開発・運営。",
     url: "https://shuro.world/",
@@ -2699,7 +2601,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "有名作家の作品が無料で読めるマンガボックス。スマートフォン・タブレットで読める作品が毎日更新されます！",
     url: "https://www.mangabox.me/",
@@ -2726,7 +2627,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "まんだらけのWEBコミック「ラザ」。毎月第3水曜お昼の12時頃更新中！",
     url: "http://laza.mandarake.co.jp/",
@@ -2752,7 +2652,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "リイド社がお送りする“無料”WEBまんが「リイドカフェ」。ブラウザさえあればPCでもスマホでも読めます。グルメ・ファンタジー・青春・サスペンス・ギャグ、あなたの気分にあった作品が見つかる！",
     url: "http://leedcafe.com/",
@@ -2778,7 +2677,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description: "リイド社が運営する無料Webマンガマガジン「トーチweb」。",
     url: "https://to-ti.in/",
     faviconUrl:
@@ -2805,7 +2703,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "レジンコミックスは、韓国発の人気Web漫画（ウェブトゥーン）を日本語で楽しめる公式プラットフォームです。恋愛・アクション・ファンタジーなど多彩なジャンルのオリジナル作品を、無料でも一部閲覧可能。話題の最新作やランキング上位の作品も多数掲載中！",
     url: "https://lezhin.jp/",
@@ -2838,7 +2735,6 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "BeLTOON（ベルトゥーン）は、レジンエンターテインメントが贈るBL特化のウェブトゥーンプラットフォームです。",
     url: "https://www.beltoon.jp/",
@@ -2864,7 +2760,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "レベルファイブがお届けするWEBマンガサイト！あの作品のスピンオフから完全オリジナルまで、読めばあなたの元気ブースターとなること間違いなし！",
     url: "https://manga-5.com/",
@@ -2890,7 +2785,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "アルファポリスの公式Web漫画は、コミックス化された範囲以外はすべて無料！全話無料の漫画も多数。ファンタジー、恋愛、TL、ギャグ、4コマ等、ここでしか読めない人気漫画が連載中！",
     url: "https://www.alphapolis.co.jp/manga/official",
@@ -2916,7 +2810,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "毎日投稿されるユーザー作品や、様々なマンガ雑誌の公式作品を楽しむならニコニコ漫画！作品数は国内最大級、無料マンガも多数、ここでしか読めないマンガを思う存分楽しもう！",
     url: "https://manga.nicovideo.jp/",
@@ -2942,7 +2835,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: true,
-    saasBrand: null,
     description:
       "GANMA!とは、スマホやタブレットで読むのにぴったりなオリジナル新作マンガ配信サービスです。GANMA!でしか読めない新作マンガが毎週更新、いずれも無料で続々と登場！月額定額の「GANMA!プレミアム」でオリジナル完結作品も読み放題。",
     url: "https://ganma.jp/web",
@@ -2968,7 +2860,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "映画化、アニメ化で話題のマンガなど、約112万点の豊富なラインナップ！最新刊まで揃うストアコーナーでは、お得な1巻無料、複数巻無料キャンペーンも常時開催中！",
     url: "https://manga.line.me/",
@@ -2996,7 +2887,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: false,
-    saasBrand: null,
     description:
       "マンガ・グラビアが毎日無料のヤンマガWeb公式サイトです。ヤンマガは40周年を迎え、SF、ヤンキー、ホラー・サスペンス画など様々なジャンルのマンガを配信中。",
     url: "https://yanmaga.jp/",
@@ -3022,7 +2912,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "オリジナル連載作品が初回全話無料で読めるジャンプのマンガサービス。『銀魂 3年Z組銀八先生』『怪獣８号』『アオのハコ』『ハイキュー!!』など人気ジャンプ作品のタテカラー版から、『ラスボス少女アカリ』『きみの幕が上がる』『ミリオンモージャ』などのオリジナルマンガも楽しめる！",
     url: "https://jumptoon.com/",
@@ -3049,7 +2938,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    saasBrand: null,
     description:
       "漫画制作スタジオ「ソラジマ」公式のWebtoon（縦読み漫画）配信プラットフォーム。ファンタジー・恋愛・ドラマなど様々なジャンルの連載作品を「待てば無料」で毎日1話読める。『傷だらけ聖女より報復をこめて』『シンデレラ・コンプレックス』などアニメ化・ドラマ化した話題作も配信中。オリジナル読切漫画は毎週月曜日に公開。",
     url: "https://sorajimatoon.com/",
@@ -3075,7 +2963,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "最新話は無料で読めるドリコムが贈るオリジナルコミック連載サイト。アニメ化決定の『ブレイド＆バスタード』や『婚約者が浮気相手と駆け落ちしました。』など様々なジャンルのオリジナル作品を連載中！有料話はポイントを購入して読み進められる。",
     url: "https://drecomi-plus.jp/",
@@ -3101,7 +2988,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "一二三書房が贈るWebマンガ配信サイト「コミックノヴァ」。毎週金曜日夕方ごろ更新で、異世界ファンタジーを中心に様々なジャンルのオリジナル漫画を無料で読める。",
     url: "https://www.123hon.com/nova/",
@@ -3128,7 +3014,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "一二三書房が贈るWebマンガ配信サイト「コミックポルカ」。毎週金曜日夕方ごろ更新で、異世界ファンタジーを中心に様々なジャンルのオリジナル漫画を無料で読める。",
     url: "https://www.123hon.com/polca/",
@@ -3155,7 +3040,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "コミ劇では大人気コミックエッセイがいつでも無料で読み放題！大ヒット猫マンガから、映像化された話題作、美容・ダイエット、旅行、出産・子育て、ライフスタイルまで様々なジャンルの作品を平日ほぼ毎日更新。",
     url: "https://www.comic-essay.com/",
@@ -3182,7 +3066,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "太田出版が贈るオリジナルコミック誌のWEBサイト「マンガ・エロティクス・エフ」。山本直樹、古屋兎丸をはじめとする作家陣による、幻想的で甘く官能的な連載マンガ作品を配信中。",
     url: "https://erotics-f.com/",
@@ -3215,7 +3098,6 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    saasBrand: null,
     description:
       "心がうごく、世界が広がる 大人も子どもも楽しめる安心のまんがポータルサイトです。毎週更新、閲覧無料！ 笑い、感動、希望をテーマに、まなびにつながる様々なジャンルのまんがコンテンツを配信していきます。",
     url: "https://gakcomic.gakken.jp/",

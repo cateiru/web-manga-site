@@ -7,7 +7,7 @@ export type SiteType = "出版社型" | "書店型";
 /** ログインに利用できるアカウント種別 */
 export type LoginAccountType =
   | "メールアドレス"
-  | "コミチ"
+  | "コミチID"
   | "集英社ID"
   | "小学館ID"
   | "講談社ID"
@@ -70,8 +70,6 @@ export type Site = {
   isSubscribe: boolean;
   /** 専用アプリがあるかどうか */
   hasApp: boolean;
-  /** 利用しているSaaSブランド名（該当しない場合は null） */
-  saasBrand: string | null;
   /** サイトの説明文 */
   description: string;
   /** サイトのURL */

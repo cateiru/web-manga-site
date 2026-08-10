@@ -22,7 +22,6 @@ const baseSite: Site = {
   isRental: false,
   isSubscribe: true,
   hasApp: false,
-  saasBrand: null,
   description: "テスト用の説明文です。",
   url: "https://example.com",
   faviconUrl: null,

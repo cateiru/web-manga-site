@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {
   getDevelopers,
   getLoginAccountTypes,
-  getSaasBrands,
   getSitesBySearch,
   getSiteTypes,
   getUpdateFrequencyUnits,
@@ -17,7 +16,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "検索",
   description:
-    "種別・利用可否・ログイン可否・開発元・配信SaaS・更新頻度の条件を組み合わせて Web マンガサイトを検索できます。",
+    "種別・利用可否・ログイン可否・開発元・更新頻度の条件を組み合わせて Web マンガサイトを検索できます。",
 };
 
 export default async function SearchPage({
@@ -29,7 +28,6 @@ export default async function SearchPage({
   const siteTypes = getSiteTypes();
   const loginAccountTypes = getLoginAccountTypes();
   const developers = getDevelopers();
-  const saasBrands = getSaasBrands();
   const updateFrequencyUnits = getUpdateFrequencyUnits();
 
   return (
@@ -126,21 +124,6 @@ export default async function SearchPage({
                 className={styles.checkbox}
               />
               {developer}
-            </label>
-          ))}
-        </fieldset>
-        <fieldset className={styles.fieldset}>
-          <legend className={styles.legend}>配信SaaS</legend>
-          {saasBrands.map((brand) => (
-            <label key={brand} className={styles.checkboxLabel}>
-              <input
-                type="checkbox"
-                name="saasBrand"
-                value={brand}
-                defaultChecked={filter.saasBrands.includes(brand)}
-                className={styles.checkbox}
-              />
-              {brand}
             </label>
           ))}
         </fieldset>
