@@ -30,7 +30,9 @@
   aspect-ratio: 1200 / 630;
   object-fit: contain;
   background: var(--color-ink-5);
-  border-bottom: var(--border-width) solid var(--color-ink);
+  /* border-bottom だと box-sizing: border-box でも aspect-ratio の計算対象に含まれてしまうため、
+     レイアウトサイズに影響しない box-shadow で下線を描画する */
+  box-shadow: 0 var(--border-width) 0 0 var(--color-ink);
 }
 
 .header {
