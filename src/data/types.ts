@@ -16,7 +16,10 @@ export type LoginAccountType =
   | "Facebook"
   | "Twitter"
   | "LINE"
-  | "Yahoo! JAPAN ID";
+  | "Yahoo! JAPAN ID"
+  | "Cygames iD"
+  | "pixivアカウント"
+  | "ニコニコアカウント";
 
 /** サイトの更新頻度情報 */
 export type UpdateFrequency = {
