@@ -1,0 +1,74 @@
+import { describe, expect, it } from "vitest";
+import { render, screen } from "@testing-library/react";
+import type { Site } from "@/data/types";
+import { SiteDetail } from "./SiteDetail";
+
+const baseSite: Site = {
+  id: "test-site",
+  name: "テストマンガ",
+  publisher: "テスト出版",
+  developer: null,
+  updateFrequency: {
+    unit: "week",
+    interval: 1,
+    timesPerInterval: null,
+    daysOfWeek: null,
+    timesOfDay: null,
+  },
+  type: "出版社型",
+  isLogin: false,
+  loginAccountType: [],
+  isPurchase: true,
+  isRental: false,
+  isSubscribe: true,
+  hasApp: false,
+  saasBrand: null,
+  description: "テスト用の説明文です。",
+  url: "https://example.com",
+  faviconUrl: null,
+  ogImageUrl: null,
+};
+
+describe("SiteDetail", () => {
+  it("サイト名・出版社・説明文を表示する", () => {
+    render(<SiteDetail site={baseSite} />);
+    expect(screen.getByRole("heading", { level: 1, name: "テストマンガ" })).toBeDefined();
+    expect(screen.getByText("テスト用の説明文です。")).toBeDefined();
+  });
+
+  it("isLogin が false の場合は「ログイン機能なし」と表示する", () => {
+    render(<SiteDetail site={baseSite} />);
+    expect(screen.getByText("ログイン機能なし")).toBeDefined();
+  });
+
+  it("isLogin が true の場合は利用可能なアカウント種別を表示する", () => {
+    render(
+      <SiteDetail
+        site={{ ...baseSite, isLogin: true, loginAccountType: ["Google", "Apple"] }}
+      />,
+    );
+    expect(screen.getByText("Google、Apple")).toBeDefined();
+  });
+
+  it("developer が null の場合は開発元の行を表示しない", () => {
+    render(<SiteDetail site={baseSite} />);
+    expect(screen.queryByText("開発元")).toBeNull();
+  });
+
+  it("developer がある場合は開発元を連結して表示する", () => {
+    render(<SiteDetail site={{ ...baseSite, developer: ["開発元A", "開発元B"] }} />);
+    expect(screen.getByText("開発元A、開発元B")).toBeDefined();
+  });
+
+  it("saasBrand がある場合は配信SaaSを表示する", () => {
+    render(<SiteDetail site={{ ...baseSite, saasBrand: "テストSaaS" }} />);
+    expect(screen.getByText("配信SaaS")).toBeDefined();
+    expect(screen.getByText("テストSaaS")).toBeDefined();
+  });
+
+  it("サイトを見るリンクが url を指している", () => {
+    render(<SiteDetail site={baseSite} />);
+    const link = screen.getByRole("link", { name: "サイトを見る" });
+    expect(link.getAttribute("href")).toBe("https://example.com");
+  });
+});
