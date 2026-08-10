@@ -12,6 +12,9 @@ export function Header() {
           <Link href="/publisher" className={styles.navLink}>
             出版社一覧
           </Link>
+          <Link href="/search" className={styles.navLink}>
+            検索
+          </Link>
         </nav>
       </div>
     </header>
