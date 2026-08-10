@@ -21,6 +21,14 @@ export type LoginAccountType =
   | "pixivアカウント"
   | "ニコニコアカウント";
 
+/** 開発元企業の情報 */
+export type Developer = {
+  /** 会社名 */
+  name: string;
+  /** 企業サイトまたはプレスリリースのURL */
+  url: string;
+};
+
 /** サイトの更新頻度情報 */
 export type UpdateFrequency = {
   /** 更新頻度の単位 */
@@ -44,7 +52,7 @@ export type Site = {
   /** 出版社 */
   publisher: string;
   /** 開発元（複数の場合あり）。不明・非公開の場合は null */
-  developer: string[] | null;
+  developer: Developer[] | null;
   /** 更新頻度 */
   updateFrequency: UpdateFrequency;
   /** サイトの種別 */

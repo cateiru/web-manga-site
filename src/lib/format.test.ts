@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { UpdateFrequency } from "@/data/types";
-import { formatList, formatUpdateFrequency } from "./format";
+import { formatUpdateFrequency } from "./format";
 
 function freq(overrides: Partial<UpdateFrequency>): UpdateFrequency {
   return {
@@ -12,16 +12,6 @@ function freq(overrides: Partial<UpdateFrequency>): UpdateFrequency {
     ...overrides,
   };
 }
-
-describe("formatList", () => {
-  it("複数要素を読点で連結する", () => {
-    expect(formatList(["A", "B", "C"])).toBe("A、B、C");
-  });
-
-  it("空配列の場合は空文字を返す", () => {
-    expect(formatList([])).toBe("");
-  });
-});
 
 describe("formatUpdateFrequency", () => {
   it("不定期の場合は「不定期更新」を返す", () => {

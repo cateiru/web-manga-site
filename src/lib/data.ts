@@ -85,9 +85,9 @@ export function getLoginAccountTypes(): LoginAccountType[] {
 
 /** 掲載サイトが存在する開発元を、ja ロケールの文字列順で返す */
 export function getDevelopers(): string[] {
-  return [...new Set(sites.flatMap((site) => site.developer ?? []))].sort((a, b) =>
-    a.localeCompare(b, "ja"),
-  );
+  return [
+    ...new Set(sites.flatMap((site) => (site.developer ?? []).map((d) => d.name))),
+  ].sort((a, b) => a.localeCompare(b, "ja"));
 }
 
 /** 掲載サイトが利用している配信 SaaS ブランドを、ja ロケールの文字列順で返す（自社独自システムの null は含まない） */
@@ -125,7 +125,7 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
     const matchesDeveloper =
       filter.developers.length === 0 ||
       (site.developer ?? []).some((developer) =>
-        filter.developers.includes(developer),
+        filter.developers.includes(developer.name),
       );
     const matchesSaasBrand =
       filter.saasBrands.length === 0 ||

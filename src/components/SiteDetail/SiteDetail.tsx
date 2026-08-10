@@ -1,6 +1,7 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import type { Site } from "@/data/types";
-import { formatList, formatUpdateFrequency } from "@/lib/format";
+import { formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
 import { SiteOgImage } from "@/components/SiteOgImage/SiteOgImage";
 import styles from "./SiteDetail.module.css";
@@ -42,7 +43,16 @@ export function SiteDetail({ site }: SiteDetailProps) {
         {site.developer && site.developer.length > 0 && (
           <div className={styles.metaRow}>
             <dt>開発元</dt>
-            <dd>{formatList(site.developer)}</dd>
+            <dd>
+              {site.developer.map((developer, index) => (
+                <Fragment key={developer.name}>
+                  {index > 0 && "、"}
+                  <a href={developer.url} target="_blank" rel="noopener noreferrer">
+                    {developer.name}
+                  </a>
+                </Fragment>
+              ))}
+            </dd>
           </div>
         )}
         <div className={styles.metaRow}>

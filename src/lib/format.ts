@@ -1,9 +1,5 @@
 import type { UpdateFrequency } from "@/data/types";
 
-export function formatList(list: string[]): string {
-  return list.join("、");
-}
-
 const DAY_LABELS: Record<string, string> = {
   mon: "月",
   tue: "火",

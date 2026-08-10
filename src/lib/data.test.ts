@@ -198,7 +198,7 @@ describe("getSitesBySearch", () => {
     const sites = getSitesBySearch({ ...EMPTY_FILTER, developers: [developer] });
     expect(sites.length).toBeGreaterThan(0);
     for (const site of sites) {
-      expect(site.developer ?? []).toContain(developer);
+      expect((site.developer ?? []).map((d) => d.name)).toContain(developer);
     }
   });
 

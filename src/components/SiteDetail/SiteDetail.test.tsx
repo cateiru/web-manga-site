@@ -55,9 +55,22 @@ describe("SiteDetail", () => {
     expect(screen.queryByText("開発元")).toBeNull();
   });
 
-  it("developer がある場合は開発元を連結して表示する", () => {
-    render(<SiteDetail site={{ ...baseSite, developer: ["開発元A", "開発元B"] }} />);
-    expect(screen.getByText("開発元A、開発元B")).toBeDefined();
+  it("developer がある場合は各社名をリンクとして連結して表示する", () => {
+    render(
+      <SiteDetail
+        site={{
+          ...baseSite,
+          developer: [
+            { name: "開発元A", url: "https://a.example.com" },
+            { name: "開発元B", url: "https://b.example.com" },
+          ],
+        }}
+      />,
+    );
+    const linkA = screen.getByRole("link", { name: "開発元A" });
+    const linkB = screen.getByRole("link", { name: "開発元B" });
+    expect(linkA.getAttribute("href")).toBe("https://a.example.com");
+    expect(linkB.getAttribute("href")).toBe("https://b.example.com");
   });
 
   it("saasBrand がある場合は配信SaaSを表示する", () => {

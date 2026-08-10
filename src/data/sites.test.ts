@@ -60,6 +60,16 @@ describe("sites データの整合性", () => {
     }
   });
 
+  it("developer の url はすべて絶対URLである", () => {
+    for (const site of sites) {
+      for (const developer of site.developer ?? []) {
+        expect(isAbsoluteUrl(developer.url), `${site.id} の developer(${developer.name})`).toBe(
+          true,
+        );
+      }
+    }
+  });
+
   it("formatUpdateFrequency がすべてのサイトでエラーにならず null/undefined を含まない", () => {
     for (const site of sites) {
       const result = formatUpdateFrequency(site.updateFrequency);
