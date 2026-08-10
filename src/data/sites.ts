@@ -2989,4 +2989,31 @@ export const sites: Site[] = [
     faviconUrl: "https://yanmaga.jp/favicon.ico",
     ogImageUrl: "https://yanmaga.jp/default_ogimage.png",
   },
+  {
+    id: "111",
+    name: "ジャンプTOON",
+    publisher: "集英社",
+    developer: ["株式会社サイバーエージェント"],
+    updateFrequency: {
+      unit: "day",
+      interval: 1,
+      timesPerInterval: 1,
+      daysOfWeek: null,
+      timesOfDay: null,
+    },
+    type: "出版社型",
+    isLogin: true,
+    loginAccountType: ["Google", "Apple"],
+    isPurchase: true,
+    isRental: false,
+    isSubscribe: false,
+    hasApp: true,
+    saasBrand: null,
+    description:
+      "オリジナル連載作品が初回全話無料で読めるジャンプのマンガサービス。『銀魂 3年Z組銀八先生』『怪獣８号』『アオのハコ』『ハイキュー!!』など人気ジャンプ作品のタテカラー版から、『ラスボス少女アカリ』『きみの幕が上がる』『ミリオンモージャ』などのオリジナルマンガも楽しめる！",
+    url: "https://jumptoon.com/",
+    faviconUrl: "https://jumptoon.com/favicon.ico",
+    ogImageUrl:
+      "https://static.jumptoon.com/_next/static/media/opengraph-image.f8537618.png",
+  },
 ];
