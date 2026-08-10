@@ -3191,4 +3191,37 @@ export const sites: Site[] = [
     ogImageUrl:
       "https://erotics-f.com/cms/wp-content/uploads/2024/09/erotics-f_card.jpg",
   },
+  {
+    id: "118",
+    name: "ガッコミ",
+    publisher: "Gakken",
+    developer: [
+      {
+        name: "株式会社セガ エックスディー",
+        url: "https://segaxd.co.jp/works/e6bea650a21b28980ecc2af09cd7fa8cb38dc5c1.html",
+      },
+    ],
+    updateFrequency: {
+      unit: "week",
+      interval: 1,
+      timesPerInterval: 1,
+      daysOfWeek: ["fri"],
+      timesOfDay: null,
+    },
+    type: "出版社型",
+    isLogin: true,
+    loginAccountType: ["学研ID"],
+    isPurchase: false,
+    isRental: false,
+    isSubscribe: false,
+    hasApp: false,
+    saasBrand: null,
+    description:
+      "心がうごく、世界が広がる 大人も子どもも楽しめる安心のまんがポータルサイトです。毎週更新、閲覧無料！ 笑い、感動、希望をテーマに、まなびにつながる様々なジャンルのまんがコンテンツを配信していきます。",
+    url: "https://gakcomic.gakken.jp/",
+    faviconUrl:
+      "https://gakcomic.gakken.jp/wp-content/themes/gakcomic/src/images/favicon.ico",
+    ogImageUrl:
+      "https://s3.ap-northeast-1.amazonaws.com/prd-gakcomic.gakken.jp-wordpress/wp-content/uploads/2022/09/about.jpg",
+  },
 ];

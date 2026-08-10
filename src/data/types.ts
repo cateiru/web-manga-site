@@ -11,6 +11,7 @@ export type LoginAccountType =
   | "集英社ID"
   | "小学館ID"
   | "講談社ID"
+  | "学研ID"
   | "Google"
   | "Apple"
   | "Facebook"
