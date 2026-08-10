@@ -1850,7 +1850,7 @@ export const sites: Site[] = [
     description:
       "文化・暮らし・景観などの岩手の魅力を、マンガの力を使って県公式で世界に発信！",
     url: "http://comiciwate.jp/",
-    faviconUrl: "http://comiciwate.jp/img/top/sec01_tit.png",
+    faviconUrl: null,
     ogImageUrl: "http://comiciwate.jp/img/top/slider_01.jpg",
   },
   {
@@ -2469,7 +2469,7 @@ export const sites: Site[] = [
     description:
       "毎週金曜日更新！登録不要＆無料、日本文芸社の公式Webまんがサイト！",
     url: "https://gorakuweb.com/",
-    faviconUrl: "https://gorakuweb.com/favicon.ico",
+    faviconUrl: null,
     ogImageUrl: "https://gorakuweb.com/ogp.png",
   },
   {
@@ -2736,7 +2736,7 @@ export const sites: Site[] = [
     description:
       "リイド社がお送りする“無料”WEBまんが「リイドカフェ」。ブラウザさえあればPCでもスマホでも読めます。グルメ・ファンタジー・青春・サスペンス・ギャグ、あなたの気分にあった作品が見つかる！",
     url: "http://leedcafe.com/",
-    faviconUrl: "http://leedcafe.com/favicon.ico",
+    faviconUrl: null,
     ogImageUrl: "http://leedcafe.com/wp-content/uploads/2016/09/renewsly-1.jpg",
   },
   {
