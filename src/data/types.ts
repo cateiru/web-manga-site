@@ -70,8 +70,8 @@ export type Site = {
   isSubscribe: boolean;
   /** 専用アプリがあるかどうか */
   hasApp: boolean;
-  /** サイトの説明文 */
-  description: string;
+  /** サイトの説明文。サイトの meta description タグの内容をそのまま引用する（書き換えない）。meta description が存在しない場合は null */
+  description: string | null;
   /** サイトのURL */
   url: string;
   /** favicon画像のURL。取得できない場合は null（非表示にする） */

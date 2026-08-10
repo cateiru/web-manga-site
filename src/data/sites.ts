@@ -72,7 +72,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "小学館の漫画が読める総合webコミックサイト「モブサイコ」「ケンガンアシュラ」などマンガワンオリジナル作品を多数掲載。まんが雑誌「サンデー」「スピリッツ」「スペリオール」「ちゃお」「flowers」などの連載作品等も読める！",
+      "小学館の漫画が読める総合webコミックサイト\n「モブサイコ」「ケンガンアシュラ」などマンガワンオリジナル作品を多数掲載。\nまんが雑誌「サンデー」「スピリッツ」「スペリオール」「ちゃお」「flowers」などの連載作品等も読める！",
     url: "https://manga-one.com/",
     faviconUrl: "https://manga-one.com/assets/meta/favicon.png",
     ogImageUrl: "https://manga-one.com/assets/logo-ogp.webp",
@@ -154,7 +154,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: true,
     description:
-      "ヤングジャンプをはじめとする集英社公式・ジャンプ系青年マンガ誌総合サイトです。多彩な漫画・グラビアコンテンツを配信中！",
+      "『面白さ、えりすぐり！』集英社の青年誌オトナ向けマンガアプリ&サイト。週刊ヤングジャンプ・グランドジャンプ・ウルトラジャンプ・異世界ヤンジャンなどの連載作品ほかオリジナル連載ほかグラビアや写真集も充実！",
     url: "https://ynjn.jp/",
     faviconUrl: "https://public.ynjn.jp/web/img/common/favicon.ico",
     ogImageUrl: "https://ynjn.jp/renewal/img/ogp/default.webp",
@@ -232,7 +232,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "毎日無料でまんがが読める 小学館の総合Webコミックサイト！「ミステリと言う勿れ」「BANANA FISH」「主人恋日記」など人気約900作を配信中！",
+      "毎日無料でまんがが読める 小学館の総合Webコミックサイト！ 「ミステリと言う勿れ」「BANANA FISH」「主人恋日記」など人気約900作を配信中！",
     url: "https://flowercomics.jp/",
     faviconUrl: "https://flowercomics.jp/assets/app-icon/favicon.png",
     ogImageUrl: "https://flowercomics.jp/assets/logo.ogp.png",
@@ -259,8 +259,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: true,
     hasApp: true,
-    description:
-      "無料で読めるマンガアプリ「マンガMee(マンガミー)」！集英社の名作コミックはもちろん、アニメ化・ドラマ化の話題作、連載中の作品やオリジナルの新作、キュンとする、泣ける、スカッとする作品に出会える漫画サイト！連載作家も随時募集中！",
+    description: null,
     url: "https://manga-mee.jp/",
     faviconUrl: "https://manga-mee.jp/assets/favicon.ico",
     ogImageUrl: null,
@@ -394,7 +393,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "週刊ヤングジャンプ編集部が運営する無料Webマンガサイト。編集部が厳選したオリジナル漫画と、ヤンジャン作品の試し読みが楽しめる。",
+      "ヤングジャンプ編集部が運営する無料Webマンガサイト、となりのヤングジャンプ。編集部が厳選したオリジナル漫画が楽しめます。オリジナル漫画だけでなく、ヤンジャン作品の試し読みも公開中です。",
     url: "https://www.tonarinoyj.jp/",
     faviconUrl: "https://cdn.tonarinoyj.jp/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.tonarinoyj.jp/images/ogimage.png?1785987060",
@@ -419,7 +418,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: false,
     description:
-      "アフタヌーン編集部がお届けするWeb漫画サイト。オリジナル漫画連載、コラムや小説、「アフタヌーン」連載作品が無料で楽しめる。毎週月曜12時更新。",
+      "アフタヌーン編集部がお届けするWeb漫画サイト。毎週月曜12時更新です。オリジナル漫画連載、コラムや小説、「アフタヌーン」連載作品が無料で楽しめます。",
     url: "https://andsofa.com",
     faviconUrl: "https://cdn.andsofa.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.andsofa.com/images/ogimage.png?1785987060",
@@ -444,7 +443,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: false,
     description:
-      "モーニング・ツーが楽しさそのままWebに登場。人気連載作品からフレッシュな新連載、名作まで無料で楽しめる。毎週木曜更新。",
+      "モーニング・ツーが楽しさそのままwebに登場！ 人気の連載作品も、フレッシュな新連載も、もう一度読みたいあの名作も。モーニング・ツー作品が無料で楽しめる！ 毎週木曜更新です。",
     url: "https://morningtwo.com",
     faviconUrl:
       "https://morningtwo.com/_next/static/images/favicon.74cf862b.ico",
@@ -471,7 +470,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: false,
     description:
-      "月刊少年マガジン編集部がおくるWeb漫画サイト。オリジナル作品や月マガ作品が読める。毎週火曜・金曜正午更新。",
+      "月刊少年マガジン編集部がおくるWeb漫画サイト。毎週火曜、金曜正午更新。オリジナル作品や月マガ作品が読める！",
     url: "https://getsumagakichi.com/",
     faviconUrl: "https://getsumagakichi.com/gmagakichi/images/favicon.ico",
     ogImageUrl: "https://getsumagakichi.com/gmagakichi/images/ogimage.jpg",
@@ -523,7 +522,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "新潮社がお届けするWEBマンガサイト。毎週火曜日・金曜日更新、話題作を無料で読める。有料話は1話単位でポイント購入可能。",
+      "新潮社がお届けするＷＥＢマンガサイトです。毎週火曜日・金曜日更新！登録不要！完全無料！シビれるマンガをお届けします。",
     url: "https://kuragebunch.com/",
     faviconUrl: "https://cdn.kuragebunch.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.kuragebunch.com/images/ogimage.png?1785987060",
@@ -548,7 +547,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "王道と革新のWEB漫画誌「コミックバンチKai」。くらげバンチと共通のアカウントで利用可能。毎週金曜日正午更新。",
+      "毎週金曜日正午更新！王道と革新のWEB漫画誌、「コミックバンチKai」",
     url: "https://comicbunch-kai.com",
     faviconUrl:
       "https://comicbunch-kai.com/_next/static/images/favicon.38d304e9.ico",
@@ -575,7 +574,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "リイド社がお届けするWEB漫画サイト「コミックボーダー」。ちょっとした時間の「境目」に楽しめる作品を毎週金曜12時更新。",
+      "毎週金曜１２時更新！ちょっとした時間の「境目」にお楽しみください！",
     url: "https://comicborder.com",
     faviconUrl: "https://cdn.comicborder.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.comicborder.com/images/ogimage.png?1785987060",
@@ -600,7 +599,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "オーバーラップ発のWEBコミック誌「コミックガルド」。1話単位・コミックス単位でポイント購入可能。毎日12時更新。",
+      "毎日12時更新！オーバーラップ発のWEBコミック誌",
     url: "https://comic-gardo.com",
     faviconUrl: "https://comic-gardo.com/images/favicon.ico",
     ogImageUrl: "https://comic-gardo.com/images/ogimage.png?v=2026-01",
@@ -625,7 +624,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "コアミックスがお届けするWEB漫画サイト「ゼノンプラス」。話題作・人気作が毎日12時更新。",
+      "話題作・人気作が毎日12時更新！ゼノン編集部がお届けするWEB漫画サイト「ゼノンプラス」です！",
     url: "https://comic-zenon.com",
     faviconUrl: "https://cdn.comic-zenon.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.comic-zenon.com/images/ogimage.png?1785987060",
@@ -650,7 +649,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: false,
     description:
-      "マッグガーデン発のWEBマンガサイト「マグコミ」。月額500円のプレミアム会員になると対象作品の最新話を先読みできる。毎週火曜日・金曜日更新。",
+      "マッグガーデン発のWEBマンガサイトです。毎月火曜日・金曜日更新！プレミアムな「マンガ」のひとときを",
     url: "https://magcomi.com",
     faviconUrl: "https://magcomi.com/_next/static/images/favicon.091821c0.ico",
     ogImageUrl: "https://magcomi.com/images/ogimage.png",
@@ -675,7 +674,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "双葉社発のマンガ配信サイト「webアクション」。有料話は1話単位でポイント購入可能。毎週火曜と金曜12時更新。",
+      "webアクションは双葉社発のマンガ配信サイトです。毎週火曜と金曜１２時更新！",
     url: "https://comic-action.com",
     faviconUrl:
       "https://comic-action.com/_next/static/images/favicon.ef027f01.ico",
@@ -701,7 +700,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "完全無料のWEBマンガサイト「コミックトレイル」。作品とつながる、盛り上がる、マンガのフェス空間。毎週金曜日更新。",
+      "完全無料のWEBマンガサイト。作品とつながる、盛り上がる、マンガのフェス空間！毎週金曜日更新！",
     url: "https://comic-trail.com",
     faviconUrl: "https://cdn.comic-trail.com/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.comic-trail.com/images/ogimage.png?1785987060",
@@ -726,7 +725,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "芳文社「まんがタイム」の今が集まる公式Web漫画サイト。オリジナル・ホーム・タイム3誌の注目作品を毎週金曜日に更新。",
+      "芳文社「まんがタイム」の今が集まる公式Web漫画サイト。オリジナル・ホーム・タイム3誌の注目作品を毎週金曜日に更新！心温まる日常からドラマチックなストーリー作品まで、幅広いジャンルのWeb漫画が無料で楽しめます。読者と作品が新しく出会う「広場（スクエア）」として、最新の連載情報をお届けします。",
     url: "https://mangatime-square.com/",
     faviconUrl: "https://mangatime-square.com/images/favicon.ico",
     ogImageUrl: "https://mangatime-square.com/images/ogimage.png",
@@ -751,7 +750,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "『FEEL YOUNG』『マンガJam』『on BLUE』『SHODENSHA COMICS』の作品が揃う無料マンガサイト「FEEL web」。毎週金曜12時更新。",
+      "毎週金曜12時更新！『FEEL YOUNG』、『マンガJam』、『on BLUE』、『SHODENSHA COMICS』から珠玉の作品が揃う無料マンガサイトです。実写化、アニメ化された話題の作品からここでしか読めないオリジナル、懐かしの名作まで、胸キュンなマンガがたくさん！",
     url: "https://feelweb.jp",
     faviconUrl: "https://cdn.feelweb.jp/images/favicon.ico?1785987060",
     ogImageUrl: "https://cdn.feelweb.jp/images/ogimage.png?1785987060",
@@ -776,7 +775,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "無料で読める漫画サイト「コミックオギャー!!」。『邦キチ！映子さん』をはじめ、ギャグ・百合・ネコなどジャンルレスな漫画が勢揃い。",
+      "無料で読める漫画サイト「コミックオギャー!!」。『邦キチ！ 映子さん』をはじめ、ギャグ・百合・ネコなどジャンルレスな漫画が勢揃い!!",
     url: "https://comic-ogyaaa.com",
     faviconUrl:
       "https://comic-ogyaaa.com/_next/static/images/favicon.03f907f5.ico",
@@ -803,7 +802,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "アニメ化で話題のマンガが会員登録不要・アプリ不要・無料ですぐ読めるWEBコミック誌「コミック アース・スター」。有料話の購入には無料会員登録が必要。毎週木曜更新。",
+      "アニメ化で話題のマンガが、会員登録不要、アプリ不要、無料ですぐ読める。異世界転生・ファンタジーから学園・恋愛・チートに聖女や悪役令嬢・追放系まで。コミック アース・スターなら今スグ読みたい漫画が見つかる！",
     url: "https://comic-earthstar.com/",
     faviconUrl:
       "https://comic-earthstar.com/_next/static/images/favicon.d163b20b.ico",
@@ -829,7 +828,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "株式会社シュークリームが贈る女性向けマンガレーベル「OUR FEEL（アワフィール）」。第1・3木曜日更新。",
+      "どんな気持ちも、わたしだけのもの。株式会社シュークリームが贈る女性向けマンガレーベル、2024年6月6日オープン！",
     url: "https://ourfeel.jp",
     faviconUrl: "https://ourfeel.jp/_next/static/images/favicon.c974ed14.ico",
     ogImageUrl: "https://ourfeel.jp/images/ogimage.jpg",
@@ -854,7 +853,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "恋愛ファンタジー、三角関係、不倫劇など心に響く物語が揃う無料Webマンガサイト「Seasons」。文藝春秋の人気小説のコミカライズも掲載。毎週金曜12時更新。",
+      "恋愛ファンタジー、三角関係、不倫劇――毎週金曜12時更新の無料Webマンガサイトで、心に響く物語に出会おう。文藝春秋の人気小説のコミカライズも。話題作や完結作も一気読み！",
     url: "https://comic-seasons.com",
     faviconUrl:
       "https://comic-seasons.com/_next/static/images/favicon.bb803add.ico",
@@ -880,7 +879,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "一迅社の公式Webマンガサイト「一迅プラス」。異世界ファンタジー・ラブコメ・サスペンス・ホラー・百合・BL・TLと多彩なジャンルの漫画が楽しめる。ほぼ毎日更新。",
+      "一迅社の公式Webマンガサイトです。異世界ファンタジー・ラブコメ・サスペンス・ホラー・百合・BL・TLと多彩なジャンルのマンガをお楽しみいただけます！ ほぼ毎日更新中♪",
     url: "https://ichicomi.com",
     faviconUrl: "https://ichicomi.com/images/favicon.ico",
     ogImageUrl: "https://ichicomi.com/images/ogimage.png",
@@ -905,7 +904,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "少年画報社発の無料で読めるWeb漫画サイト「COMIC Y-OURS」。『ヤングキング アワーズ』連載作をはじめ、不朽の名作まで勢揃い。毎週火曜日・金曜日更新。",
+      "少年画報社発の無料で読めるWeb漫画サイト。毎週火曜日・金曜日更新！「ヤングキング アワーズ」連載作をはじめ、不朽の名作まで勢揃い！",
     url: "https://comic-y-ours.com/",
     faviconUrl: "https://comic-y-ours.com/images/favicon.ico",
     ogImageUrl: "https://comic-y-ours.com/images/ogimage.png",
@@ -984,7 +983,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "ヤングアニマルWebは、基本無料でマンガもグラビアも読めます。『ベルセルク』（三浦建太郎）、『3月のライオン』（羽海野チカ）、『ふたりエッチ』（克・亜樹）などのマンガが基本全話無料でお楽しみいただけます。",
+      "ヤングアニマルWebは、基本無料でマンガもグラビアも読めます。『ベルセルク』（三浦建太郎）、『3月のライオン』（羽海野チカ）、『ふたりエッチ』（克・亜樹）、『紫雲寺家の子供たち』（宮島礼吏）、『ペリリュー　―楽園のゲルニカ―』（武田一義　原案協力：平塚柾緒＜太平洋戦争研究会＞）などのマンガが基本全話無料でお楽しみいただけます",
     url: "https://younganimal.com/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20230224104233322F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -1119,7 +1118,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "HERO'S Web（ヒーローズウェブ）公式サイト。毎日更新のマンガサイト！多彩な作品が無料で読める。",
+      "漫画出版社ヒーローズの公式マンガサイト（旧コミプレ）。\n異世界・転生、悪役令嬢、バトル、百合など幅広いジャンルの話題作を毎日更新！\nアニメ化・映画化の人気作から注目の最新連載まで、無料で読めるエピソードも充実のラインナップでお届けします。",
     url: "https://heros-web.com/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20260402143754987F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -1172,7 +1171,8 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    description: "エンタメを知り尽くしたぴあが贈る、WEBコミック！",
+    description:
+      "エンタメを知り尽くしたぴあが贈る、WEBコミック！",
     url: "https://piacomic.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20260311164643027F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -1225,7 +1225,8 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    description: "竹書房の新作マンガが毎日更新・無料で読める「竹コミ！」。",
+    description:
+      "人気マンガを読むなら竹書房の公式コミックサイト【竹コミ！】。\n『メイドインアビス』『ポプテピピック』『ぼのぼの』『魔法少女にあこがれて』など、アニメ化作品の最新話が読める！\n異世界・ラブコメ・ファンタジーからホラー・日常系４コマまで、竹書房の話題作を毎日更新中！",
     url: "https://takecomic.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20250718184000918F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -1306,7 +1307,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "無料マンガが毎週更新！『不運からの最強男』『受付嬢に告白したくてギルドに通いつめたら英雄になってた』など、異世界マンガが大集結！コミックグラストの最新話を読むならここ！",
+      "無料マンガが毎週更新！『不運からの最強男』『受付嬢に告白したくてギルドに通いつめたら英雄になってた』など、異世界マンガが大集結！ コミックグラストの最新話を読むならここ！",
     url: "https://manga-zegra.com/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20250617110941017BF176846B72C6763E1749C4FE4F04121.png",
@@ -1414,7 +1415,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "無料マンガがほぼ毎日更新！『くまクマ熊ベアー』『妃教育から逃げたい私』『婚約破棄された令嬢を拾った俺が、イケナイことを教え込む』など、アニメ化作品や話題作品が続々!!",
+      "無料マンガがほぼ毎日更新！『くまクマ熊ベアー』『妃教育から逃げたい私』『婚約破棄された令嬢を拾った俺が、イケナイことを教え込む』『え、社内システム全てワンオペしている私を解雇ですか？』など、アニメ化作品や話題作品が続々!!",
     url: "https://comicpash.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20241031191821557475DCE436E0F30EA8461D0638A9371DB.jpg",
@@ -1468,7 +1469,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "『ソラリス』『そして誰もいなくなった』『同志少女よ、敵を撃て』をはじめとした名作・話題作を配信中！早川書房のSF・ミステリ作品のコミカライズ＆オリジナルコミックを集めたマンガサイト。",
+      "『ソラリス』『そして誰もいなくなった』『同志少女よ、敵を撃て』をはじめとした名作・話題作を配信中！早川書房のSF・ミステリ作品のコミカライズ＆オリジナルコミックを集めたマンガサイト",
     url: "https://hayacomic.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20240711195851927BA887A28D2D49C20D4ED1AD0930BF752.png",
@@ -1495,7 +1496,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "関西・東海・西日本の作家さんを中心に新たなマンガ文化を発信するWEB雑誌「マグカン」！人気マンガを毎日無料でお楽しみいただけます。",
+      "magkan 関西・東海・西日本の作家さんを中心に新たなマンガ文化を発信するWEB雑誌「マグカン」！人気マンガを毎日無料でお楽しみいただけます。",
     url: "https://kansai.mag-garden.co.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20240222191411632BF176846B72C6763E1749C4FE4F04121.png",
@@ -1522,7 +1523,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "「ライド」「アドバンス」「ivy」「ELMO」「Rouge」……マイクロマガジン社が誇る5レーベルが、一堂に会するマンガポータルサイト『ライコミ（コミックライド）』誕生!!無料話も多数読めちゃう!!",
+      "「ライド」「アドバンス」「ivy」「ELMO」「Rouge」……マイクロマガジン社が誇る5レーベルが、一堂に会するマンガポータルサイト『ライコミ』誕生!!無料話も多数読めちゃう!!",
     url: "https://comicride.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/2023110812210406621D82061EF0815C33836ACC60650979F.png",
@@ -1576,7 +1577,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "booklistaSTUDIO（ブックリスタスタジオ）では、国内外のパートナー企業やクリエイターの皆様とともに、タテ読みフルカラーコミックをはじめとするコンテンツ制作・プロデュースを行っています。日本初のウェブトゥーン制作スタジオによるWEBマンガ誌。",
+      "booklistaSTUDIO（ブックリスタスタジオ）では、国内外のパートナー企業やクリエイターの皆様とともに、タテ読みフルカラーコミックをはじめとするコンテンツ制作・プロデュースを行っています。",
     url: "https://studio.booklista.co.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/2022082512495912936D300022A15F98279E12BA1D277174B.png",
@@ -1603,7 +1604,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "コルクスタジオストアのマンガは、未知の感情に出会えるような、「心を描き出す物語」であふれています。個性豊かなキャラクターたちと共に、「好き」を深める旅に出かけませんか？最強の縦スクロールWebマンガ誌。",
+      "コルクスタジオストアのマンガは、 未知の感情に出会えるような、「心を描き出す物語」であふれています。 個性豊かなキャラクターたちと共に、「好き」を深める旅に出かけませんか？",
     url: "https://ebookstore.corkagency.com/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/5/favicon/20211012135556568183F969DC71A6246F60FCE49327D7CC4.png",
@@ -1657,7 +1658,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "無料マンガが毎日更新！『ハニーレモンソーダ』『ピンクとハバネロ』『太陽よりも眩しい星』をはじめとした人気作の最新話を配信中！集英社の少女・女性向けマンガ作品を集めた総合配信サイト「リマコミ＋」。",
+      "無料マンガが毎日更新！『ハニーレモンソーダ』『ピンクとハバネロ』『太陽よりも眩しい星』をはじめとした人気作の最新話を配信中！集英社の少女・女性向けマンガ作品を集めた総合配信サイト「リマコミ＋」",
     url: "https://rimacomiplus.jp/",
     faviconUrl:
       "https://cdn-public.rimacomiplus.jp/content/default/favicon/202406131310251186EBD3CA9B60C5ECB4778FFB50025903D.png",
@@ -1710,7 +1711,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "好奇心の扉を開く、癒やしと不思議が満載のWEBコミックサイト「COMICポルタ」。毎月第2・4金曜日更新！",
+      "好奇心の扉を開く、癒やしと不思議が満載のWEBコミックサイト  COMIC ポルタ  毎月第2、4金曜日更新！",
     url: "https://comic-porta.com/",
     faviconUrl:
       "https://comic-porta.com/wp-content/themes/porta_wp/favicon.ico",
@@ -1737,7 +1738,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "ゼロサム系女子のための新しいオンラインマガジン、ゼロサムオンライン。新作コミック＆コラボ企画を続々掲載予定！ゼロサムならではのハイクオリティで贈る空前のオンラインコミック！",
+      "ゼロサム系女子のための新しいオンラインマガジン、ゼロサムオンライン。新作コミック＆コラボ企画を続々掲載予定！ゼロサムならではのハイクオリティで贈る空前のオンラインコミック！！",
     url: "https://zerosumonline.com/",
     faviconUrl: "https://zerosumonline.com/favicon.ico",
     ogImageUrl: "https://zerosumonline.com/assets/logo.svg",
@@ -1762,7 +1763,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "文化・暮らし・景観などの岩手の魅力を、マンガの力を使って県公式で世界に発信！",
+      "文化・暮らし・景観などの岩手の魅力を、マンガの力を使って県公式で世界に発信!!",
     url: "http://comiciwate.jp/",
     faviconUrl: null,
     ogImageUrl: "http://comiciwate.jp/img/top/slider_01.jpg",
@@ -1793,7 +1794,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "マンガを無料で読むならcomico（コミコ）！オリジナルのタテカラー漫画から定番のコミックス、投稿作品まで豊富に取り揃え！お得なキャンペーンも毎日実施中！",
+      "マンガを無料で読むならcomico（コミコ）！ オリジナルのタテカラー漫画から定番のコミックス、投稿作品まで豊富に取り揃え！ お得なキャンペーンも毎日実施中！",
     url: "https://www.comico.jp/",
     faviconUrl: "https://www.comico.jp/favicon/comico/favicon.ico",
     ogImageUrl: "https://www.comico.jp/_nuxt/comico_logo.CtQbt-Eb.svg",
@@ -1850,7 +1851,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "無料漫画60,598作品2,381,243話以上を読み放題！期間限定の全巻無料・全話無料も！話題のまんが・小説・電子書籍を無料で読むならピッコマで！",
+      "無料漫画60,598作品 2,381,243話以上を読み放題！期間限定の全巻無料・全話無料も！話題のまんが・小説・電子書籍を無料で読むならピッコマで！アニメ・ドラマ・映画化のコミックからオリジナル連載作品まで毎日楽しめる電子書籍サイト。恋愛・ドラマ・ホラー・ミステリー・ファンタジー・アクション・スポーツ・日常・TL・BLなど豊富なラインナップを多数待てば無料、試し読みで配信中！",
     url: "https://piccoma.com/web/",
     faviconUrl: "https://piccoma.com/static/web/img/common/ios_web_icon.png",
     ogImageUrl:
@@ -1875,7 +1876,8 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description: "おもしろさ無限大。Gakken発エンタメ漫画サイト。",
+    description:
+      "おもしろさ無限大。Gakken発エンタメ漫画サイト",
     url: "https://nora.gakken.jp/",
     faviconUrl:
       "https://nora.gakken.jp/wp-content/uploads/cropped-app-icon-192x192.png",
@@ -1913,9 +1915,9 @@ export const sites: Site[] = [
     publisher: "KADOKAWA",
     developer: null,
     updateFrequency: {
-      unit: "irregular",
-      interval: null,
-      timesPerInterval: null,
+      unit: "day",
+      interval: 1,
+      timesPerInterval: 1,
       daysOfWeek: null,
       timesOfDay: null,
     },
@@ -1980,7 +1982,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "漫画ファンのための無料エンタテイメント・サイト「漫画街 MANGA-GAI」。",
+      "漫画ファンのための無料エンタテイメント・サイト漫画街 MANGA-GAI powered by GINNANSHA",
     url: "http://www.manga-gai.net/",
     faviconUrl: "http://www.manga-gai.net/favicon.ico",
     ogImageUrl: "http://www.manga-gai.net/images/logo.png",
@@ -2005,7 +2007,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "さらに面白く、さらに読みやすく――webマンガサイトを《加速》させるcomicブースト。",
+      "さらに面白く、さらに読みやすく――webマンガサイトを《加速》させるcomicブースト",
     url: "https://comic-boost.com/",
     faviconUrl: "https://cdn.comic-boost.com/contents/img/favicon.ico",
     ogImageUrl: "https://cdn.comic-boost.com/contents/img/logo_ogpimage.png",
@@ -2056,7 +2058,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description: "コミチのオリジナルマンガ配信中！コミチコミックス。",
+    description: null,
     url: "https://comics.comici.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20260227131740291F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -2083,7 +2085,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "『TSUYOSHI』や『明日、私は誰かのカノジョ』など人気のオリジナルコミックが毎日無料で読める！サイコミ。",
+      "『TSUYOSHI』や『明日、私は誰かのカノジョ』など人気のオリジナルコミックが毎日無料で読める！-サイコミ",
     url: "https://cycomi.com/",
     faviconUrl: "https://cycomi.com/_next/static/media/icon-180.25863021.png",
     ogImageUrl: "https://cycomi.com/_next/static/media/shareOGP.48702fdf.png",
@@ -2107,7 +2109,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description: "無料で読める漫画・4コマサイト「パチクリ！」。",
+    description: null,
     url: "https://pachikuri.jp/",
     faviconUrl: "https://pachikuri.jp/wp-content/themes/pachikuri/icon.ico",
     ogImageUrl: "https://pachikuri.jp/wp-content/themes/pachikuri/img/logo.png",
@@ -2214,7 +2216,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "雑誌「ウィングス」の姉妹誌として開設された、新書館の無料WEBコミックサイト。",
+      "新書館：コミック＆ノヴェル[ウェブマガジンウィングスサイト]",
     url: "https://www.shinshokan.com/webwings/",
     faviconUrl: "https://www.shinshokan.com/img/common/logo_footer.png",
     ogImageUrl: "https://www.shinshokan.com/webwings/img/top/img_main.png",
@@ -2239,7 +2241,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "「栞」は大洋図書から発信するオールジャンルのWEBまんがサイトです。「栞」でしか読めないオリジナル作品も豊富に揃えておりプロ・アマを問わず幅広い漫画を閲覧できます。",
+      "「栞」は大洋図書から発信するオールジャンルのWEBまんがサイトです。「栞」でしか読めないオリジナル作品も豊富に揃えておりプロ・アマを問わず幅広い漫画を閲覧できます。漫画の投稿・持ち込みも受け付けております。",
     url: "https://shiori-on.com/",
     faviconUrl: "https://shiori-on.com/favicon.ico",
     ogImageUrl:
@@ -2265,7 +2267,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: false,
     description:
-      "TOブックスの公式Web漫画サイト、コロナEX。「本好きの下剋上」「ティアムーン帝国物語」など、人気作や話題作、新作が読める！",
+      "TOブックスの公式Web漫画（マンガ）サイト、コロナEX。「本好きの下剋上」「ティアムーン帝国物語 ～断頭台から始まる、姫の転生逆転ストーリー～」など、人気作や話題作、新作が読める！",
     url: "https://to-corona-ex.com/",
     faviconUrl: "https://to-corona-ex.com/favicon.ico",
     ogImageUrl: "https://to-corona-ex.com/assets/ogp.png",
@@ -2315,7 +2317,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "面白ければ何でもアリ！徳間書店のWebマンガサイト「COMICリュウ」。",
+      "面白ければ何でもアリ！",
     url: "https://comic-ryu.jp/",
     faviconUrl:
       "https://www.comic-ryu.jp/wp-content/themes/comicryu2024/ico.png",
@@ -2342,7 +2344,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "異世界ファンタジーラノベのコミカライズ専門のWEBサイト「COMICユニコーン」。",
+      "異世界ファンタジーラノベのコミカライズ専門のWEBサイト",
     url: "https://unicorn.comic-ryu.jp/",
     faviconUrl:
       "https://unicorn.comic-ryu.jp/wp-content/themes/comicunicorn2024/ico.png",
@@ -2369,7 +2371,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "毎週金曜日更新！登録不要＆無料、日本文芸社の公式Webまんがサイト！",
+      "毎週金曜日更新！ 登録不要＆無料 日本文芸社の公式Webまんがサイト！",
     url: "https://gorakuweb.com/",
     faviconUrl: null,
     ogImageUrl: "https://gorakuweb.com/ogp.png",
@@ -2393,8 +2395,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "パイインターナショナルが送る、創造的情熱震源地「PIE COMICS」。",
+    description: null,
     url: "https://comics.pie.co.jp/",
     faviconUrl:
       "https://comics.pie.co.jp/wp/wp-content/uploads/2023/02/cropped-fav-32x32.png",
@@ -2421,7 +2422,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "複数のウェブコミック誌を運営する、ピクシブのマンガ総合サイト「pixivコミック」。",
+      "pixivコミックでは、アニメ・映画化の話題のマンガからpixivコミック限定作品まで10,600作品以上が無料で読める！",
     url: "https://comic.pixiv.net/",
     faviconUrl: "https://comic.pixiv.net/favicon.ico",
     ogImageUrl: "https://comic.pixiv.net/store/ogimage/variants/zhofhvzzg",
@@ -2446,7 +2447,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "人気の漫画がカラーで読める！新作が無料で読める！縦スクロールだから楽々読める！",
+      "人気の漫画がカラーで読める！\n新作が無料で読める！\n縦スクロールだから楽々読める！\n(>‿<)ノ ٩( 'ω' )و",
     url: "https://vcomi.jp/",
     faviconUrl: "https://vcomi.jp/favicon.ico",
     ogImageUrl: "https://vcomi.jp/app/immutable/assets/ogp.96f33d4c.webp",
@@ -2471,7 +2472,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "メテオ・ポラリス・アンブル・エトワール・アスティル・ズレット！の漫画（マンガ）が無料で読める公式WEBマンガサイト。",
+      "メテオ・ポラリス・アンブル・エトワール・アスティル・ズレット！の漫画(マンガ)が無料で読める！",
     url: "https://kirapo.jp/",
     faviconUrl: "https://kirapo.jp/favicon.ico",
     ogImageUrl: "https://kirapo.jp/img/kirapo_ogp.jpg",
@@ -2496,7 +2497,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "復讐サスペンス、話題の実写ドラマ化作品、異世界ファンタジーまで、株式会社ぶんか社＆海王社の幅広いラインナップが読める無料マンガサイト。毎週火曜・金曜の12時更新！",
+      "復讐サスペンス、話題の実写ドラマ化作品、異世界ファンタジーまで、株式会社ぶんか社＆海王社の幅広いラインナップが読める無料マンガサイト「マンガよもんが」。毎週火曜・金曜の12時更新！",
     url: "https://www.yomonga.com/",
     faviconUrl:
       "https://www.yomonga.com/wp-content/themes/yomonga-theme/assets/favicon/favicon_64x64.ico",
@@ -2548,7 +2549,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "Web上にある架空の“MANGA”リゾート・サイト。株式会社マガジンハウスが開発・運営。",
+      "Web上にある架空の”MANGA”リゾート・サイト。株式会社マガジンハウスが開発・運営。",
     url: "https://shuro.world/",
     faviconUrl:
       "https://shuro.world/core/wp-content/themes/shuro2025v01/dist/assets/favicons/apple-touch-icon.png",
@@ -2601,7 +2602,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "まんだらけのWEBコミック「ラザ」。毎月第3水曜お昼の12時頃更新中！",
+      "まんだらけのWEBコミック「ラザ」。毎月第3水曜「着物ちゃんとロリータちゃん」(作:岡野く仔)お昼の12時頃更新中！",
     url: "http://laza.mandarake.co.jp/",
     faviconUrl: "http://laza.mandarake.co.jp/favicon.ico",
     ogImageUrl: "http://laza.mandarake.co.jp/assets/img/ogimage.png",
@@ -2650,7 +2651,8 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description: "リイド社が運営する無料Webマンガマガジン「トーチweb」。",
+    description:
+      "Just another WordPress site",
     url: "https://to-ti.in/",
     faviconUrl:
       "https://to-ti.in/wp-content/themes/to-ti_v20/common/img/favicon.ico",
@@ -2709,7 +2711,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "BeLTOON（ベルトゥーン）は、レジンエンターテインメントが贈るBL特化のウェブトゥーンプラットフォームです。",
+      "★新規登録でもれなく200ptプレゼント★ 女性・少女漫画、恋愛・ロマンス作品からBL・TL・GLまで幅広いオリジナルハイクオリティWEB漫画が読める！\nしかも無料ポイントがもらえる超豪華なルーレットが毎日回せちゃう！お得なキャンペーン365日実施中♪",
     url: "https://www.beltoon.jp/",
     faviconUrl: "https://www.beltoon.jp/favicon.ico",
     ogImageUrl: "https://www.beltoon.jp/images/meta-logo.png",
@@ -2809,7 +2811,7 @@ export const sites: Site[] = [
     isSubscribe: true,
     hasApp: true,
     description:
-      "GANMA!とは、スマホやタブレットで読むのにぴったりなオリジナル新作マンガ配信サービスです。GANMA!でしか読めない新作マンガが毎週更新、いずれも無料で続々と登場！月額定額の「GANMA!プレミアム」でオリジナル完結作品も読み放題。",
+      "GANMA!とは、スマホやタブレットで読むのにぴったりなオリジナル新作マンガ配信サービスです。GANMA!でしか読めない新作マンガが毎週更新、いずれも無料で続々と登場！",
     url: "https://ganma.jp/web",
     faviconUrl: "https://ganma.jp/web/favicon.ico",
     ogImageUrl: "https://ganma.jp/web/images/OGP_Image.jpeg",
@@ -2912,7 +2914,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: true,
     description:
-      "漫画制作スタジオ「ソラジマ」公式のWebtoon（縦読み漫画）配信プラットフォーム。ファンタジー・恋愛・ドラマなど様々なジャンルの連載作品を「待てば無料」で毎日1話読める。『傷だらけ聖女より報復をこめて』『シンデレラ・コンプレックス』などアニメ化・ドラマ化した話題作も配信中。オリジナル読切漫画は毎週月曜日に公開。",
+      "ソラジマのWeb雑誌、創刊 !",
     url: "https://sorajimatoon.com/",
     faviconUrl: "https://sorajimatoon.com/images/appIcon.jpg",
     ogImageUrl: "https://sorajimatoon.com/images/sorajimatoonOgp.png",
@@ -2937,7 +2939,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "最新話は無料で読めるドリコムが贈るオリジナルコミック連載サイト。アニメ化決定の『ブレイド＆バスタード』や『婚約者が浮気相手と駆け落ちしました。』など様々なジャンルのオリジナル作品を連載中！有料話はポイントを購入して読み進められる。",
+      "最新話は無料！ドリコムがおくるコミック連載サイトです。アニメ化決定『ブレイド＆バスタード』や『婚約者が浮気相手と駆け落ちしました。』ほかオリジナル作品も連載中!!",
     url: "https://drecomi-plus.jp/",
     faviconUrl: "https://drecomi-plus.jp/favicon.ico",
     ogImageUrl: "https://drecomi-plus.jp/ogp.jpg",
@@ -2961,8 +2963,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "一二三書房が贈るWebマンガ配信サイト「コミックノヴァ」。毎週金曜日夕方ごろ更新で、異世界ファンタジーを中心に様々なジャンルのオリジナル漫画を無料で読める。",
+    description: null,
     url: "https://www.123hon.com/nova/",
     faviconUrl:
       "https://www.123hon.com/nova/wp-content/uploads/2021/02/cropped-sns-logo-192x192.jpg",
@@ -2987,38 +2988,11 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "一二三書房が贈るWebマンガ配信サイト「コミックポルカ」。毎週金曜日夕方ごろ更新で、異世界ファンタジーを中心に様々なジャンルのオリジナル漫画を無料で読める。",
+    description: null,
     url: "https://www.123hon.com/polca/",
     faviconUrl:
       "https://www.123hon.com/polca/wp-content/uploads/2021/04/polca_icon_big.png",
     ogImageUrl: null,
-  },
-  {
-    id: "116",
-    name: "コミックエッセイ劇場",
-    publisher: "KADOKAWA",
-    developer: null,
-    updateFrequency: {
-      unit: "day",
-      interval: 1,
-      timesPerInterval: 1,
-      daysOfWeek: null,
-      timesOfDay: null,
-    },
-    type: "出版社型",
-    isLogin: false,
-    loginAccountType: [],
-    isPurchase: false,
-    isRental: false,
-    isSubscribe: false,
-    hasApp: false,
-    description:
-      "コミ劇では大人気コミックエッセイがいつでも無料で読み放題！大ヒット猫マンガから、映像化された話題作、美容・ダイエット、旅行、出産・子育て、ライフスタイルまで様々なジャンルの作品を平日ほぼ毎日更新。",
-    url: "https://www.comic-essay.com/",
-    faviconUrl: "https://www.comic-essay.com/themes/comic-essay/dest/images/favicon.ico",
-    ogImageUrl:
-      "https://www.comic-essay.com/archives/001/202201/2361a4f95af3e8ac748464fe7ef8641b451dc31acacad73f36b6a919940e79c2.png",
   },
   {
     id: "117",
@@ -3040,7 +3014,7 @@ export const sites: Site[] = [
     isSubscribe: false,
     hasApp: false,
     description:
-      "太田出版が贈るオリジナルコミック誌のWEBサイト「マンガ・エロティクス・エフ」。山本直樹、古屋兎丸をはじめとする作家陣による、幻想的で甘く官能的な連載マンガ作品を配信中。",
+      "新プロジェクトスタート！ 山本直樹、古屋兎丸、池田明久実、ゴトウユキコ、蜈蚣Melibe、小骨トモ、ほか新作マンガを発表中です。",
     url: "https://erotics-f.com/",
     faviconUrl:
       "https://erotics-f.com/cms/wp-content/uploads/2025/04/erotics-flogo_sq_w-300x300.png",

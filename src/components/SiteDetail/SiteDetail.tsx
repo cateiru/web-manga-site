@@ -70,7 +70,9 @@ export function SiteDetail({ site }: SiteDetailProps) {
           </dd>
         </div>
       </dl>
-      <p className={styles.description}>{site.description}</p>
+      {site.description && (
+        <p className={styles.description}>{site.description}</p>
+      )}
       <div className={styles.badges}>
         <SiteBadge label="購入" active={site.isPurchase} />
         <SiteBadge label="レンタル" active={site.isRental} />
