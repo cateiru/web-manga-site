@@ -8,6 +8,11 @@ export function Header() {
         <Link href="/" className={styles.logo}>
           Webマンガサイト一覧
         </Link>
+        <nav className={styles.nav}>
+          <Link href="/publisher" className={styles.navLink}>
+            出版社一覧
+          </Link>
+        </nav>
       </div>
     </header>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Site } from "@/data/types";
 import { formatList, formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
@@ -21,7 +22,12 @@ export function SiteDetail({ site }: SiteDetailProps) {
         )}
         <div>
           <h1 className={styles.name}>{site.name}</h1>
-          <p className={styles.publisher}>{site.publisher}</p>
+          <Link
+            href={`/publisher/${encodeURIComponent(site.publisher)}`}
+            className={styles.publisher}
+          >
+            {site.publisher}
+          </Link>
         </div>
       </div>
       <dl className={styles.meta}>
