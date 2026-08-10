@@ -14,7 +14,8 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  /* 220px を下回らない範囲で、4列を超えないように列の最小幅を広げる */
+  grid-template-columns: repeat(auto-fill, minmax(max(220px, (100% - var(--space-3) * 3) / 4), 1fr));
   gap: var(--space-3);
   list-style: none;
 }
