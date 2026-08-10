@@ -1611,33 +1611,6 @@ export const sites: Site[] = [
       "https://cdn-public.comici.jp/content/5/ogpimages/202110191526336715BA216F824A8FC7064250A95A60902AD.png",
   },
   {
-    id: "62",
-    name: "comic Bro",
-    publisher: "コミチ",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
-    updateFrequency: {
-      unit: "irregular",
-      interval: null,
-      timesPerInterval: null,
-      daysOfWeek: null,
-      timesOfDay: null,
-    },
-    type: "出版社型",
-    isLogin: true,
-    loginAccountType: ["コミチID"],
-    isPurchase: false,
-    isRental: true,
-    isSubscribe: false,
-    hasApp: false,
-    description:
-      "コミチが手がけるコミチコミックスの一つ「comic Bro」。新作から人気のブロマンス作品が大集結！",
-    url: "https://comics.comici.jp/comicbro",
-    faviconUrl:
-      "https://cdn-public.comici.jp/content/default/favicon/20260227131740291F50C73D00FDA2BD6D78CE4082E70F008.png",
-    ogImageUrl:
-      "https://cdn-public.comici.jp/content/45/ogpimages/2026022613223325052C21DD1F3212604B53DA94A4B70E9CF.png",
-  },
-  {
     id: "63",
     name: "ビッコミ",
     publisher: "小学館",
