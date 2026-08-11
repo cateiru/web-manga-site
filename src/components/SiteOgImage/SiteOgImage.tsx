@@ -15,15 +15,17 @@ export function SiteOgImage({ site, className }: SiteOgImageProps) {
   }
 
   return (
-    <div className={[className, styles.fallback].join(" ")}>
-      {site.faviconUrl && (
-        // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
-        <img
-          src={`/api/favicon/${site.id}`}
-          alt=""
-          className={styles.favicon}
-        />
-      )}
+    <div className={className}>
+      <div className={styles.fallback}>
+        {site.faviconUrl && (
+          // eslint-disable-next-line @next/next/no-img-element -- 各社faviconをnext/image最適化なしで表示するため
+          <img
+            src={`/api/favicon/${site.id}`}
+            alt=""
+            className={styles.favicon}
+          />
+        )}
+      </div>
     </div>
   );
 }
