@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getPublishers } from "@/lib/data";
 import { EmptyState } from "@/components/EmptyState/EmptyState";
+import { getPublishers } from "@/lib/data";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {

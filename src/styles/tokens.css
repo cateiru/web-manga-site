@@ -13,11 +13,11 @@
   --font-sans:
     system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Yu Gothic",
     "Noto Sans JP", sans-serif;
-  --text-xl: 700 24px/1.4 var(--font-sans);
-  --text-lg: 700 18px/1.4 var(--font-sans);
-  --text-md: 700 15px/1.4 var(--font-sans);
-  --text-sm: 400 13px/1.7 var(--font-sans);
-  --text-xs: 700 11px/1.4 var(--font-sans);
+  --text-xl: 700 24px / 1.4 var(--font-sans);
+  --text-lg: 700 18px / 1.4 var(--font-sans);
+  --text-md: 700 15px / 1.4 var(--font-sans);
+  --text-sm: 400 13px / 1.7 var(--font-sans);
+  --text-xs: 700 11px / 1.4 var(--font-sans);
 
   /* 3.3 ボーダー・シャドウ・角丸 */
   --border-width: 2px;

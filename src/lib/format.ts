@@ -10,7 +10,10 @@ const DAY_LABELS: Record<string, string> = {
   sun: "日",
 };
 
-const UNIT_LABELS: Record<Exclude<UpdateFrequency["unit"], "irregular">, string> = {
+const UNIT_LABELS: Record<
+  Exclude<UpdateFrequency["unit"], "irregular">,
+  string
+> = {
   day: "日",
   week: "週",
   month: "月",

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { sites } from "./sites";
 import { formatUpdateFrequency } from "@/lib/format";
+import { sites } from "./sites";
 
 const VALID_DAYS = new Set(["mon", "tue", "wed", "thu", "fri", "sat", "sun"]);
 const VALID_GENRES = new Set(["少年", "青年", "少女", "女性", "成人", "幼年"]);
@@ -23,7 +23,9 @@ describe("sites データの整合性", () => {
   it("isLogin が false の場合 loginAccountType は空配列である", () => {
     for (const site of sites) {
       if (!site.isLogin) {
-        expect(site.loginAccountType, `${site.id} の loginAccountType`).toEqual([]);
+        expect(site.loginAccountType, `${site.id} の loginAccountType`).toEqual(
+          [],
+        );
       }
     }
   });
@@ -33,7 +35,10 @@ describe("sites データの整合性", () => {
       const freq = site.updateFrequency;
       if (freq.unit !== "irregular") continue;
       expect(freq.interval, `${site.id} の interval`).toBeNull();
-      expect(freq.timesPerInterval, `${site.id} の timesPerInterval`).toBeNull();
+      expect(
+        freq.timesPerInterval,
+        `${site.id} の timesPerInterval`,
+      ).toBeNull();
       expect(freq.daysOfWeek, `${site.id} の daysOfWeek`).toBeNull();
       expect(freq.timesOfDay, `${site.id} の timesOfDay`).toBeNull();
     }
@@ -43,7 +48,9 @@ describe("sites データの整合性", () => {
     for (const site of sites) {
       expect(site.genre.length, `${site.id} の genre`).toBeGreaterThan(0);
       for (const genre of site.genre) {
-        expect(VALID_GENRES.has(genre), `${site.id} の genre: ${genre}`).toBe(true);
+        expect(VALID_GENRES.has(genre), `${site.id} の genre: ${genre}`).toBe(
+          true,
+        );
       }
     }
   });
@@ -53,7 +60,9 @@ describe("sites データの整合性", () => {
       const days = site.updateFrequency.daysOfWeek;
       if (!days) continue;
       for (const day of days) {
-        expect(VALID_DAYS.has(day), `${site.id} の daysOfWeek: ${day}`).toBe(true);
+        expect(VALID_DAYS.has(day), `${site.id} の daysOfWeek: ${day}`).toBe(
+          true,
+        );
       }
     }
   });
@@ -62,10 +71,14 @@ describe("sites データの整合性", () => {
     for (const site of sites) {
       expect(isAbsoluteUrl(site.url), `${site.id} の url`).toBe(true);
       if (site.faviconUrl !== null) {
-        expect(isAbsoluteUrl(site.faviconUrl), `${site.id} の faviconUrl`).toBe(true);
+        expect(isAbsoluteUrl(site.faviconUrl), `${site.id} の faviconUrl`).toBe(
+          true,
+        );
       }
       if (site.ogImageUrl !== null) {
-        expect(isAbsoluteUrl(site.ogImageUrl), `${site.id} の ogImageUrl`).toBe(true);
+        expect(isAbsoluteUrl(site.ogImageUrl), `${site.id} の ogImageUrl`).toBe(
+          true,
+        );
       }
     }
   });
@@ -73,9 +86,10 @@ describe("sites データの整合性", () => {
   it("developer の url はすべて絶対URLである", () => {
     for (const site of sites) {
       for (const developer of site.developer ?? []) {
-        expect(isAbsoluteUrl(developer.url), `${site.id} の developer(${developer.name})`).toBe(
-          true,
-        );
+        expect(
+          isAbsoluteUrl(developer.url),
+          `${site.id} の developer(${developer.name})`,
+        ).toBe(true);
       }
     }
   });

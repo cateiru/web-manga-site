@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { EmptyState } from "@/components/EmptyState/EmptyState";
+import { SiteCard } from "@/components/SiteCard/SiteCard";
 import {
   getDevelopers,
   getGenres,
@@ -10,8 +12,6 @@ import {
   UPDATE_FREQUENCY_UNITS,
   USAGE_FLAGS,
 } from "@/lib/data";
-import { SiteCard } from "@/components/SiteCard/SiteCard";
-import { EmptyState } from "@/components/EmptyState/EmptyState";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {

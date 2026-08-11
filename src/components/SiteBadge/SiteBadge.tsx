@@ -6,6 +6,9 @@ type SiteBadgeProps = {
 };
 
 export function SiteBadge({ label, active }: SiteBadgeProps) {
-  const className = [styles.badge, active ? styles.active : styles.inactive].join(" ");
+  const className = [
+    styles.badge,
+    active ? styles.active : styles.inactive,
+  ].join(" ");
   return <span className={className}>{label}</span>;
 }

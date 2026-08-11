@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import type { Site } from "@/data/types";
 import { SiteDetail } from "./SiteDetail";
 
@@ -32,7 +32,9 @@ const baseSite: Site = {
 describe("SiteDetail", () => {
   it("サイト名・出版社・説明文を表示する", () => {
     render(<SiteDetail site={baseSite} />);
-    expect(screen.getByRole("heading", { level: 1, name: "テストマンガ" })).toBeDefined();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "テストマンガ" }),
+    ).toBeDefined();
     expect(screen.getByText("テスト用の説明文です。")).toBeDefined();
   });
 
@@ -44,7 +46,11 @@ describe("SiteDetail", () => {
   it("isLogin が true の場合は利用可能なアカウント種別を表示する", () => {
     render(
       <SiteDetail
-        site={{ ...baseSite, isLogin: true, loginAccountType: ["Google", "Apple"] }}
+        site={{
+          ...baseSite,
+          isLogin: true,
+          loginAccountType: ["Google", "Apple"],
+        }}
       />,
     );
     expect(screen.getByText("Google、Apple")).toBeDefined();

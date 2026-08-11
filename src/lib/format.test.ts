@@ -23,22 +23,30 @@ describe("formatUpdateFrequency", () => {
   });
 
   it("interval が 1 の場合は「毎週」となる", () => {
-    expect(formatUpdateFrequency(freq({ unit: "week", interval: 1 }))).toBe("毎週更新");
+    expect(formatUpdateFrequency(freq({ unit: "week", interval: 1 }))).toBe(
+      "毎週更新",
+    );
   });
 
   it("interval が 1 で timesPerInterval が 2以上の場合は回数を表示する", () => {
     expect(
-      formatUpdateFrequency(freq({ unit: "week", interval: 1, timesPerInterval: 3 })),
+      formatUpdateFrequency(
+        freq({ unit: "week", interval: 1, timesPerInterval: 3 }),
+      ),
     ).toBe("週3回更新");
   });
 
   it("週2回隔週の場合は「隔週」表記になる", () => {
-    expect(formatUpdateFrequency(freq({ unit: "week", interval: 2 }))).toBe("隔週更新");
+    expect(formatUpdateFrequency(freq({ unit: "week", interval: 2 }))).toBe(
+      "隔週更新",
+    );
   });
 
   it("隔週かつ timesPerInterval がある場合でも回数は表示されない（隔週表記が優先される）", () => {
     expect(
-      formatUpdateFrequency(freq({ unit: "week", interval: 2, timesPerInterval: 3 })),
+      formatUpdateFrequency(
+        freq({ unit: "week", interval: 2, timesPerInterval: 3 }),
+      ),
     ).toBe("隔週更新");
   });
 
@@ -58,7 +66,9 @@ describe("formatUpdateFrequency", () => {
 
   it("daysOfWeek がある場合は曜日を括弧書きで付与する", () => {
     expect(
-      formatUpdateFrequency(freq({ unit: "week", interval: 1, daysOfWeek: ["mon", "thu"] })),
+      formatUpdateFrequency(
+        freq({ unit: "week", interval: 1, daysOfWeek: ["mon", "thu"] }),
+      ),
     ).toBe("毎週（月・木）更新");
   });
 

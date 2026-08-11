@@ -1,6 +1,6 @@
-import { getSites } from "@/lib/data";
-import { SiteCard } from "@/components/SiteCard/SiteCard";
 import { EmptyState } from "@/components/EmptyState/EmptyState";
+import { SiteCard } from "@/components/SiteCard/SiteCard";
+import { getSites } from "@/lib/data";
 import styles from "./page.module.css";
 
 export default function Home() {

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPublishers, getSitesByPublisher, resolvePublisherParam } from "@/lib/data";
+import { notFound } from "next/navigation";
 import { SiteCard } from "@/components/SiteCard/SiteCard";
+import {
+  getPublishers,
+  getSitesByPublisher,
+  resolvePublisherParam,
+} from "@/lib/data";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {

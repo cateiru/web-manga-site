@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getSiteById, getSites } from "@/lib/data";
+import { notFound } from "next/navigation";
 import { SiteDetail } from "@/components/SiteDetail/SiteDetail";
+import { getSiteById, getSites } from "@/lib/data";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
@@ -32,7 +32,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SiteDetailPage({ params }: PageProps<"/site/[id]">) {
+export default async function SiteDetailPage({
+  params,
+}: PageProps<"/site/[id]">) {
   const { id } = await params;
   const site = getSiteById(id);
 

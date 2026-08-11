@@ -1,5 +1,11 @@
 import { sites } from "@/data/sites";
-import type { Genre, LoginAccountType, Site, SiteType, UpdateFrequencyUnit } from "@/data/types";
+import type {
+  Genre,
+  LoginAccountType,
+  Site,
+  SiteType,
+  UpdateFrequencyUnit,
+} from "@/data/types";
 
 /** 出版社ごとの掲載サイト件数 */
 export type PublisherSummary = {
@@ -21,7 +27,10 @@ export const USAGE_FLAGS: { key: UsageFlag; label: string }[] = [
 ];
 
 /** 更新頻度の単位と表示ラベルの対応 */
-export const UPDATE_FREQUENCY_UNITS: { key: UpdateFrequencyUnit; label: string }[] = [
+export const UPDATE_FREQUENCY_UNITS: {
+  key: UpdateFrequencyUnit;
+  label: string;
+}[] = [
   { key: "day", label: "毎日" },
   { key: "week", label: "毎週" },
   { key: "month", label: "毎月" },
@@ -85,15 +94,17 @@ export function getGenres(): Genre[] {
 
 /** 掲載サイトが存在するログインアカウント種別を、ja ロケールの文字列順で返す */
 export function getLoginAccountTypes(): LoginAccountType[] {
-  return [...new Set(sites.flatMap((site) => site.loginAccountType))].sort((a, b) =>
-    a.localeCompare(b, "ja"),
+  return [...new Set(sites.flatMap((site) => site.loginAccountType))].sort(
+    (a, b) => a.localeCompare(b, "ja"),
   );
 }
 
 /** 掲載サイトが存在する開発元を、ja ロケールの文字列順で返す */
 export function getDevelopers(): string[] {
   return [
-    ...new Set(sites.flatMap((site) => (site.developer ?? []).map((d) => d.name))),
+    ...new Set(
+      sites.flatMap((site) => (site.developer ?? []).map((d) => d.name)),
+    ),
   ].sort((a, b) => a.localeCompare(b, "ja"));
 }
 
@@ -164,8 +175,9 @@ export function parseSearchFilter(searchParams: {
 
   const toArray = (value: string | string[] | undefined): string[] =>
     value === undefined ? [] : Array.isArray(value) ? value : [value];
-  const firstValue = (value: string | string[] | undefined): string | undefined =>
-    Array.isArray(value) ? value[0] : value;
+  const firstValue = (
+    value: string | string[] | undefined,
+  ): string | undefined => (Array.isArray(value) ? value[0] : value);
 
   const types = toArray(searchParams.type).filter((value): value is SiteType =>
     knownTypes.has(value as SiteType),
@@ -189,7 +201,8 @@ export function parseSearchFilter(searchParams: {
   );
 
   const loginParam = firstValue(searchParams.login);
-  const isLogin = loginParam === "yes" ? true : loginParam === "no" ? false : null;
+  const isLogin =
+    loginParam === "yes" ? true : loginParam === "no" ? false : null;
 
   return {
     types,

@@ -5,7 +5,9 @@ const FETCH_USER_AGENT =
 export async function proxyImage(url: string): Promise<Response> {
   let upstream: Response;
   try {
-    upstream = await fetch(url, { headers: { "User-Agent": FETCH_USER_AGENT } });
+    upstream = await fetch(url, {
+      headers: { "User-Agent": FETCH_USER_AGENT },
+    });
   } catch {
     return new Response(null, { status: 502 });
   }

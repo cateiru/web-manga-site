@@ -5,7 +5,12 @@ export const sites: Site[] = [
     id: "1",
     name: "少年ジャンプ＋",
     publisher: "集英社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -32,7 +37,12 @@ export const sites: Site[] = [
     id: "2",
     name: "マガポケ",
     publisher: "講談社",
-    developer: [{ name: "株式会社セガ エックスディー", url: "https://segaxd.co.jp/works/cd76db5976c26ed980eba7b80f44856f2a5e0019.html" }],
+    developer: [
+      {
+        name: "株式会社セガ エックスディー",
+        url: "https://segaxd.co.jp/works/cd76db5976c26ed980eba7b80f44856f2a5e0019.html",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -58,7 +68,12 @@ export const sites: Site[] = [
     id: "3",
     name: "マンガワン",
     publisher: "小学館",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/mangaone" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/mangaone",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -84,7 +99,12 @@ export const sites: Site[] = [
     id: "4",
     name: "コミックDAYS",
     publisher: "講談社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -113,9 +133,15 @@ export const sites: Site[] = [
     name: "サンデーうぇぶり",
     publisher: "小学館",
     developer: [
-      { name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/sundaywebry" },
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/sundaywebry",
+      },
       { name: "and factory株式会社", url: "https://andfactory.co.jp/service/" },
-      { name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" },
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
     ],
     updateFrequency: {
       unit: "day",
@@ -143,7 +169,9 @@ export const sites: Site[] = [
     id: "6",
     name: "ヤンジャン＋",
     publisher: "集英社",
-    developer: [{ name: "and factory株式会社", url: "https://andfactory.co.jp/service/" }],
+    developer: [
+      { name: "and factory株式会社", url: "https://andfactory.co.jp/service/" },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -169,7 +197,12 @@ export const sites: Site[] = [
     id: "7",
     name: "COMIC FUZ",
     publisher: "芳文社",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://prtimes.jp/main/html/rd/p/000000002.000043331.html" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://prtimes.jp/main/html/rd/p/000000002.000043331.html",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -197,7 +230,10 @@ export const sites: Site[] = [
     publisher: "スクウェア・エニックス",
     developer: [
       { name: "and factory株式会社", url: "https://andfactory.co.jp/service/" },
-      { name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/mangaup" },
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/mangaup",
+      },
     ],
     updateFrequency: {
       unit: "day",
@@ -224,7 +260,12 @@ export const sites: Site[] = [
     id: "9",
     name: "フラコミlike！",
     publisher: "小学館",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://link-u.group/news/post/20240322_flower" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://link-u.group/news/post/20240322_flower",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -251,7 +292,10 @@ export const sites: Site[] = [
     name: "マンガMee",
     publisher: "集英社",
     developer: [
-      { name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/mangamee" },
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/mangamee",
+      },
       { name: "and factory株式会社", url: "https://andfactory.co.jp/service/" },
     ],
     updateFrequency: {
@@ -278,7 +322,12 @@ export const sites: Site[] = [
     id: "11",
     name: "ガンガンONLINE",
     publisher: "スクウェア・エニックス",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/ganganonline" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/ganganonline",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -304,7 +353,12 @@ export const sites: Site[] = [
     id: "12",
     name: "マンガがうがう",
     publisher: "双葉社",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://prtimes.jp/main/html/rd/p/000000016.000038982.html" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://prtimes.jp/main/html/rd/p/000000016.000038982.html",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -331,7 +385,10 @@ export const sites: Site[] = [
     name: "マンガPark",
     publisher: "白泉社",
     developer: [
-      { name: "株式会社Link-U Technologies", url: "https://technologies.link-u.co.jp/products/mangapark" },
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://technologies.link-u.co.jp/products/mangapark",
+      },
       { name: "and factory株式会社", url: "https://andfactory.co.jp/service/" },
     ],
     updateFrequency: {
@@ -365,7 +422,12 @@ export const sites: Site[] = [
     id: "14",
     name: "ゼブラック",
     publisher: "集英社",
-    developer: [{ name: "株式会社Link-U Technologies", url: "https://link-u.group/news/post/191209_zebrack" }],
+    developer: [
+      {
+        name: "株式会社Link-U Technologies",
+        url: "https://link-u.group/news/post/191209_zebrack",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -391,7 +453,12 @@ export const sites: Site[] = [
     id: "15",
     name: "となりのヤングジャンプ",
     publisher: "集英社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -417,7 +484,12 @@ export const sites: Site[] = [
     id: "16",
     name: "&Sofa",
     publisher: "講談社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -443,7 +515,12 @@ export const sites: Site[] = [
     id: "17",
     name: "モーニング・ツー",
     publisher: "講談社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -471,7 +548,12 @@ export const sites: Site[] = [
     id: "18",
     name: "月マガ基地",
     publisher: "講談社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -497,7 +579,12 @@ export const sites: Site[] = [
     id: "19",
     name: "ビブリオシリウス",
     publisher: "講談社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -525,7 +612,12 @@ export const sites: Site[] = [
     id: "20",
     name: "くらげバンチ",
     publisher: "新潮社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -551,7 +643,12 @@ export const sites: Site[] = [
     id: "21",
     name: "コミックバンチKai",
     publisher: "新潮社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -579,7 +676,12 @@ export const sites: Site[] = [
     id: "22",
     name: "コミックボーダー",
     publisher: "リイド社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -605,7 +707,12 @@ export const sites: Site[] = [
     id: "23",
     name: "コミックガルド",
     publisher: "オーバーラップ",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -621,8 +728,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    description:
-      "毎日12時更新！オーバーラップ発のWEBコミック誌",
+    description: "毎日12時更新！オーバーラップ発のWEBコミック誌",
     url: "https://comic-gardo.com",
     faviconUrl: "https://comic-gardo.com/images/favicon.ico",
     ogImageUrl: "https://comic-gardo.com/images/ogimage.png?v=2026-01",
@@ -631,7 +737,12 @@ export const sites: Site[] = [
     id: "24",
     name: "ゼノンプラス",
     publisher: "コアミックス",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -657,7 +768,12 @@ export const sites: Site[] = [
     id: "25",
     name: "マグコミ",
     publisher: "マッグガーデン",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -683,7 +799,12 @@ export const sites: Site[] = [
     id: "26",
     name: "webアクション",
     publisher: "双葉社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -710,7 +831,12 @@ export const sites: Site[] = [
     id: "27",
     name: "コミックトレイル",
     publisher: "芳文社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -736,7 +862,12 @@ export const sites: Site[] = [
     id: "28",
     name: "まんがタイムSquare",
     publisher: "芳文社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -762,7 +893,12 @@ export const sites: Site[] = [
     id: "29",
     name: "FEEL web",
     publisher: "祥伝社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -788,7 +924,12 @@ export const sites: Site[] = [
     id: "30",
     name: "COMIC OGYAAA!!",
     publisher: "ホーム社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -816,7 +957,12 @@ export const sites: Site[] = [
     id: "31",
     name: "コミック アース・スター",
     publisher: "アース・スター エンターテイメント",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -843,7 +989,12 @@ export const sites: Site[] = [
     id: "32",
     name: "OUR FEEL",
     publisher: "シュークリーム",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 2,
@@ -869,7 +1020,12 @@ export const sites: Site[] = [
     id: "33",
     name: "Seasons",
     publisher: "文藝春秋",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -896,7 +1052,12 @@ export const sites: Site[] = [
     id: "34",
     name: "一迅プラス",
     publisher: "一迅社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -922,7 +1083,12 @@ export const sites: Site[] = [
     id: "35",
     name: "COMIC Y-OURS",
     publisher: "少年画報社",
-    developer: [{ name: "株式会社はてな", url: "https://hatena.co.jp/solutions/gigaviewer" }],
+    developer: [
+      {
+        name: "株式会社はてな",
+        url: "https://hatena.co.jp/solutions/gigaviewer",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -948,7 +1114,12 @@ export const sites: Site[] = [
     id: "36",
     name: "チャンピオンクロス",
     publisher: "秋田書店",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -976,7 +1147,12 @@ export const sites: Site[] = [
     id: "37",
     name: "ヤンチャンWeb",
     publisher: "秋田書店",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1004,7 +1180,12 @@ export const sites: Site[] = [
     id: "38",
     name: "ヤングアニマルWeb",
     publisher: "白泉社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1032,7 +1213,12 @@ export const sites: Site[] = [
     id: "39",
     name: "ビビビコミック",
     publisher: "ツインエンジン",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1060,7 +1246,12 @@ export const sites: Site[] = [
     id: "40",
     name: "コミリラ",
     publisher: "スターツ出版",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -1088,7 +1279,12 @@ export const sites: Site[] = [
     id: "41",
     name: "Gコミ",
     publisher: "ジーオーティー",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1116,7 +1312,12 @@ export const sites: Site[] = [
     id: "42",
     name: "なみコミ",
     publisher: "WWWave",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1144,7 +1345,12 @@ export const sites: Site[] = [
     id: "43",
     name: "HERO'S Web",
     publisher: "ヒーローズ",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1172,7 +1378,12 @@ export const sites: Site[] = [
     id: "44",
     name: "花とゆめ＋",
     publisher: "白泉社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1200,7 +1411,12 @@ export const sites: Site[] = [
     id: "45",
     name: "ぴあコミック",
     publisher: "ぴあ",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1216,8 +1432,7 @@ export const sites: Site[] = [
     isRental: true,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "エンタメを知り尽くしたぴあが贈る、WEBコミック！",
+    description: "エンタメを知り尽くしたぴあが贈る、WEBコミック！",
     url: "https://piacomic.jp/",
     faviconUrl:
       "https://cdn-public.comici.jp/content/default/favicon/20260311164643027F50C73D00FDA2BD6D78CE4082E70F008.png",
@@ -1228,7 +1443,12 @@ export const sites: Site[] = [
     id: "46",
     name: "COMIC ROOM BASE",
     publisher: "コミックルーム",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -1256,7 +1476,12 @@ export const sites: Site[] = [
     id: "47",
     name: "竹コミ！",
     publisher: "竹書房",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1284,7 +1509,12 @@ export const sites: Site[] = [
     id: "48",
     name: "マンガSPA!",
     publisher: "扶桑社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1312,7 +1542,12 @@ export const sites: Site[] = [
     id: "49",
     name: "キミコミ",
     publisher: "キルタイムコミュニケーション",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1340,7 +1575,12 @@ export const sites: Site[] = [
     id: "50",
     name: "マンガゼグラ",
     publisher: "スターツ出版",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "week",
       interval: 1,
@@ -1368,7 +1608,12 @@ export const sites: Site[] = [
     id: "51",
     name: "マンガルト",
     publisher: "リイド社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "month",
       interval: 1,
@@ -1396,7 +1641,12 @@ export const sites: Site[] = [
     id: "52",
     name: "コミックグロウル",
     publisher: "ブシロードワークス",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1424,7 +1674,12 @@ export const sites: Site[] = [
     id: "53",
     name: "アサコミ",
     publisher: "朝日新聞出版",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1452,7 +1707,12 @@ export const sites: Site[] = [
     id: "54",
     name: "comic PASH! neo",
     publisher: "主婦と生活社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1480,7 +1740,12 @@ export const sites: Site[] = [
     id: "55",
     name: "COMICリュエル&COMICジャルダン",
     publisher: "実業之日本社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1508,7 +1773,12 @@ export const sites: Site[] = [
     id: "56",
     name: "ハヤコミ",
     publisher: "早川書房",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1536,7 +1806,12 @@ export const sites: Site[] = [
     id: "57",
     name: "マグカン",
     publisher: "マッグガーデン",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1564,7 +1839,12 @@ export const sites: Site[] = [
     id: "58",
     name: "ライコミ",
     publisher: "マイクロマガジン社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1592,7 +1872,12 @@ export const sites: Site[] = [
     id: "59",
     name: "マンガBANGコミックス",
     publisher: "Amazia",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1620,7 +1905,12 @@ export const sites: Site[] = [
     id: "60",
     name: "booklistaSTUDIOweb",
     publisher: "ブックリスタ",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1648,7 +1938,12 @@ export const sites: Site[] = [
     id: "61",
     name: "コルクスタジオ",
     publisher: "コルク",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1676,7 +1971,12 @@ export const sites: Site[] = [
     id: "63",
     name: "ビッコミ",
     publisher: "小学館",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "irregular",
       interval: null,
@@ -1704,7 +2004,12 @@ export const sites: Site[] = [
     id: "64",
     name: "リマコミ＋",
     publisher: "集英社",
-    developer: [{ name: "株式会社コミチ", url: "https://comici.co.jp/business/comici-plus" }],
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -1947,8 +2252,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "おもしろさ無限大。Gakken発エンタメ漫画サイト",
+    description: "おもしろさ無限大。Gakken発エンタメ漫画サイト",
     url: "https://nora.gakken.jp/",
     faviconUrl:
       "https://nora.gakken.jp/wp-content/uploads/cropped-app-icon-192x192.png",
@@ -2299,8 +2603,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "新書館：コミック＆ノヴェル[ウェブマガジンウィングスサイト]",
+    description: "新書館：コミック＆ノヴェル[ウェブマガジンウィングスサイト]",
     url: "https://www.shinshokan.com/webwings/",
     faviconUrl: "https://www.shinshokan.com/img/common/logo_footer.png",
     ogImageUrl: "https://www.shinshokan.com/webwings/img/top/img_main.png",
@@ -2404,8 +2707,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "面白ければ何でもアリ！",
+    description: "面白ければ何でもアリ！",
     url: "https://comic-ryu.jp/",
     faviconUrl:
       "https://www.comic-ryu.jp/wp-content/themes/comicryu2024/ico.png",
@@ -2432,8 +2734,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "異世界ファンタジーラノベのコミカライズ専門のWEBサイト",
+    description: "異世界ファンタジーラノベのコミカライズ専門のWEBサイト",
     url: "https://unicorn.comic-ryu.jp/",
     faviconUrl:
       "https://unicorn.comic-ryu.jp/wp-content/themes/comicunicorn2024/ico.png",
@@ -2752,8 +3053,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: false,
-    description:
-      "Just another WordPress site",
+    description: "Just another WordPress site",
     url: "https://to-ti.in/",
     faviconUrl:
       "https://to-ti.in/wp-content/themes/to-ti_v20/common/img/favicon.ico",
@@ -2981,7 +3281,12 @@ export const sites: Site[] = [
     id: "111",
     name: "ジャンプTOON",
     publisher: "集英社",
-    developer: [{ name: "株式会社サイバーエージェント", url: "https://prtimes.jp/main/html/rd/p/000000581.000011454.html" }],
+    developer: [
+      {
+        name: "株式会社サイバーエージェント",
+        url: "https://prtimes.jp/main/html/rd/p/000000581.000011454.html",
+      },
+    ],
     updateFrequency: {
       unit: "day",
       interval: 1,
@@ -3024,8 +3329,7 @@ export const sites: Site[] = [
     isRental: false,
     isSubscribe: false,
     hasApp: true,
-    description:
-      "ソラジマのWeb雑誌、創刊 !",
+    description: "ソラジマのWeb雑誌、創刊 !",
     url: "https://sorajimatoon.com/",
     faviconUrl: "https://sorajimatoon.com/images/appIcon.jpg",
     ogImageUrl: "https://sorajimatoon.com/images/sorajimatoonOgp.png",

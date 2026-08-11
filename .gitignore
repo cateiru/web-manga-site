@@ -49,5 +49,4 @@ next-env.d.ts
 !.dev.vars.example
 
 # Editors
-.vscode/
 .idea/

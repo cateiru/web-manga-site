@@ -49,6 +49,7 @@ a {
   outline-offset: 2px;
 }
 
+/* biome-ignore-start lint/complexity/noImportantStyles: prefers-reduced-motionでは他の全アニメーション指定を確実に上書きする必要があるため */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -59,3 +60,4 @@ a {
     scroll-behavior: auto !important;
   }
 }
+/* biome-ignore-end lint/complexity/noImportantStyles: prefers-reduced-motionでは他の全アニメーション指定を確実に上書きする必要があるため */

@@ -1,9 +1,9 @@
-import { Fragment } from "react";
 import Link from "next/link";
-import type { Site } from "@/data/types";
-import { formatUpdateFrequency } from "@/lib/format";
+import { Fragment } from "react";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
 import { SiteOgImage } from "@/components/SiteOgImage/SiteOgImage";
+import type { Site } from "@/data/types";
+import { formatUpdateFrequency } from "@/lib/format";
 import styles from "./SiteDetail.module.css";
 
 type SiteDetailProps = {
@@ -47,7 +47,11 @@ export function SiteDetail({ site }: SiteDetailProps) {
               {site.developer.map((developer, index) => (
                 <Fragment key={developer.name}>
                   {index > 0 && "、"}
-                  <a href={developer.url} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={developer.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {developer.name}
                   </a>
                 </Fragment>
@@ -70,7 +74,9 @@ export function SiteDetail({ site }: SiteDetailProps) {
         <div className={styles.metaRow}>
           <dt>ログイン</dt>
           <dd>
-            {site.isLogin ? site.loginAccountType.join("、") : "ログイン機能なし"}
+            {site.isLogin
+              ? site.loginAccountType.join("、")
+              : "ログイン機能なし"}
           </dd>
         </div>
       </dl>
@@ -83,7 +89,12 @@ export function SiteDetail({ site }: SiteDetailProps) {
         <SiteBadge label="定期購読" active={site.isSubscribe} />
         <SiteBadge label="アプリ" active={site.hasApp} />
       </div>
-      <a href={site.url} target="_blank" rel="noopener noreferrer" className={styles.visitLink}>
+      <a
+        href={site.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.visitLink}
+      >
         サイトを見る
       </a>
     </article>

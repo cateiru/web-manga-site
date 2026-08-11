@@ -12,9 +12,9 @@ import {
   getUpdateFrequencyUnits,
   parseSearchFilter,
   resolvePublisherParam,
+  type SearchFilter,
   UPDATE_FREQUENCY_UNITS,
   USAGE_FLAGS,
-  type SearchFilter,
 } from "./data";
 
 const EMPTY_FILTER: SearchFilter = {
@@ -52,7 +52,10 @@ describe("getPublishers", () => {
     const names = publishers.map((publisher) => publisher.name);
     expect(new Set(names).size).toBe(names.length);
 
-    const totalCount = publishers.reduce((sum, publisher) => sum + publisher.count, 0);
+    const totalCount = publishers.reduce(
+      (sum, publisher) => sum + publisher.count,
+      0,
+    );
     expect(totalCount).toBe(getSites().length);
   });
 
@@ -138,11 +141,15 @@ describe("getUpdateFrequencyUnits", () => {
   it("掲載サイトが存在する更新頻度の単位のみを UPDATE_FREQUENCY_UNITS の順に返す", () => {
     const units = getUpdateFrequencyUnits();
     const order = UPDATE_FREQUENCY_UNITS.map((option) => option.key);
-    const sorted = [...units].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+    const sorted = [...units].sort(
+      (a, b) => order.indexOf(a) - order.indexOf(b),
+    );
     expect(units).toEqual(sorted);
 
     for (const unit of units) {
-      expect(getSites().some((site) => site.updateFrequency.unit === unit)).toBe(true);
+      expect(
+        getSites().some((site) => site.updateFrequency.unit === unit),
+      ).toBe(true);
     }
   });
 });
@@ -204,7 +211,10 @@ describe("getSitesBySearch", () => {
 
   it("開発元は OR で絞り込む", () => {
     const [developer] = getDevelopers();
-    const sites = getSitesBySearch({ ...EMPTY_FILTER, developers: [developer] });
+    const sites = getSitesBySearch({
+      ...EMPTY_FILTER,
+      developers: [developer],
+    });
     expect(sites.length).toBeGreaterThan(0);
     for (const site of sites) {
       expect((site.developer ?? []).map((d) => d.name)).toContain(developer);
@@ -213,7 +223,10 @@ describe("getSitesBySearch", () => {
 
   it("更新頻度の単位は OR で絞り込む", () => {
     const [unit] = getUpdateFrequencyUnits();
-    const sites = getSitesBySearch({ ...EMPTY_FILTER, updateFrequencyUnits: [unit] });
+    const sites = getSitesBySearch({
+      ...EMPTY_FILTER,
+      updateFrequencyUnits: [unit],
+    });
     expect(sites.length).toBeGreaterThan(0);
     for (const site of sites) {
       expect(site.updateFrequency.unit).toBe(unit);
@@ -255,7 +268,10 @@ describe("parseSearchFilter", () => {
 
   it("単一値・複数値のどちらも配列として解決する", () => {
     const [type] = getSiteTypes();
-    expect(parseSearchFilter({ type })).toEqual({ ...EMPTY_FILTER, types: [type] });
+    expect(parseSearchFilter({ type })).toEqual({
+      ...EMPTY_FILTER,
+      types: [type],
+    });
     expect(parseSearchFilter({ usage: ["isPurchase", "hasApp"] })).toEqual({
       ...EMPTY_FILTER,
       usageFlags: ["isPurchase", "hasApp"],

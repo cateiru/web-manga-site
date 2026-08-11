@@ -1,8 +1,8 @@
 import Link from "next/link";
-import type { Site } from "@/data/types";
-import { formatUpdateFrequency } from "@/lib/format";
 import { SiteBadge } from "@/components/SiteBadge/SiteBadge";
 import { SiteOgImage } from "@/components/SiteOgImage/SiteOgImage";
+import type { Site } from "@/data/types";
+import { formatUpdateFrequency } from "@/lib/format";
 import styles from "./SiteCard.module.css";
 
 type SiteCardProps = {
