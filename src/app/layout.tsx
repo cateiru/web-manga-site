@@ -4,7 +4,10 @@ import { Footer } from "@/components/Footer/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Webマンガサイト一覧",
+  title: {
+    template: "%s | Webマンガサイト一覧",
+    default: "Webマンガサイト一覧",
+  },
   description: "出版社・事業者が運営する Web マンガサイトを横断的に一覧できるディレクトリサイト。",
 };
 
