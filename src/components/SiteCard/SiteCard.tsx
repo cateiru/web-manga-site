@@ -36,6 +36,10 @@ export function SiteCard({ site }: SiteCardProps) {
           <dt>種別</dt>
           <dd>{site.type}</dd>
         </div>
+        <div className={styles.metaRow}>
+          <dt>ジャンル</dt>
+          <dd>{site.genre.join("、")}</dd>
+        </div>
       </dl>
       {site.description && (
         <p className={styles.description}>{site.description}</p>

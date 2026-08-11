@@ -1,5 +1,5 @@
 import { sites } from "@/data/sites";
-import type { LoginAccountType, Site, SiteType, UpdateFrequencyUnit } from "@/data/types";
+import type { Genre, LoginAccountType, Site, SiteType, UpdateFrequencyUnit } from "@/data/types";
 
 /** 出版社ごとの掲載サイト件数 */
 export type PublisherSummary = {
@@ -37,6 +37,7 @@ export const UPDATE_FREQUENCY_UNITS: { key: UpdateFrequencyUnit; label: string }
  */
 export type SearchFilter = {
   types: SiteType[];
+  genres: Genre[];
   usageFlags: UsageFlag[];
   isLogin: boolean | null;
   loginAccountTypes: LoginAccountType[];
@@ -75,6 +76,13 @@ export function getSiteTypes(): SiteType[] {
   );
 }
 
+/** 掲載サイトが存在するジャンルを、ja ロケールの文字列順で返す */
+export function getGenres(): Genre[] {
+  return [...new Set(sites.flatMap((site) => site.genre))].sort((a, b) =>
+    a.localeCompare(b, "ja"),
+  );
+}
+
 /** 掲載サイトが存在するログインアカウント種別を、ja ロケールの文字列順で返す */
 export function getLoginAccountTypes(): LoginAccountType[] {
   return [...new Set(sites.flatMap((site) => site.loginAccountType))].sort((a, b) =>
@@ -102,6 +110,9 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
   return sites.filter((site) => {
     const matchesType =
       filter.types.length === 0 || filter.types.includes(site.type);
+    const matchesGenre =
+      filter.genres.length === 0 ||
+      filter.genres.some((genre) => site.genre.includes(genre));
     const matchesUsage = filter.usageFlags.every((flag) => site[flag]);
     const matchesLogin =
       filter.isLogin === null || site.isLogin === filter.isLogin;
@@ -121,6 +132,7 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
 
     return (
       matchesType &&
+      matchesGenre &&
       matchesUsage &&
       matchesLogin &&
       matchesLoginAccountType &&
@@ -136,6 +148,7 @@ export function getSitesBySearch(filter: SearchFilter): Site[] {
  */
 export function parseSearchFilter(searchParams: {
   type?: string | string[];
+  genre?: string | string[];
   usage?: string | string[];
   login?: string | string[];
   loginAccountType?: string | string[];
@@ -143,6 +156,7 @@ export function parseSearchFilter(searchParams: {
   frequency?: string | string[];
 }): SearchFilter {
   const knownTypes = new Set(getSiteTypes());
+  const knownGenres = new Set(getGenres());
   const knownUsageFlags = new Set(USAGE_FLAGS.map((flag) => flag.key));
   const knownLoginAccountTypes = new Set(getLoginAccountTypes());
   const knownDevelopers = new Set(getDevelopers());
@@ -155,6 +169,9 @@ export function parseSearchFilter(searchParams: {
 
   const types = toArray(searchParams.type).filter((value): value is SiteType =>
     knownTypes.has(value as SiteType),
+  );
+  const genres = toArray(searchParams.genre).filter((value): value is Genre =>
+    knownGenres.has(value as Genre),
   );
   const usageFlags = toArray(searchParams.usage).filter(
     (value): value is UsageFlag => knownUsageFlags.has(value as UsageFlag),
@@ -176,6 +193,7 @@ export function parseSearchFilter(searchParams: {
 
   return {
     types,
+    genres,
     usageFlags,
     isLogin,
     loginAccountTypes,

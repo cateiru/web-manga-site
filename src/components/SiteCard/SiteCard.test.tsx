@@ -16,6 +16,7 @@ const baseSite: Site = {
     timesOfDay: null,
   },
   type: "出版社型",
+  genre: ["青年"],
   isLogin: false,
   loginAccountType: [],
   isPurchase: true,

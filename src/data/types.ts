@@ -4,6 +4,9 @@ export type UpdateFrequencyUnit = "day" | "week" | "month" | "irregular";
 /** Web マンガサイトの種別 */
 export type SiteType = "出版社型" | "書店型";
 
+/** 掲載作品の対象読者ジャンル */
+export type Genre = "少年" | "青年" | "少女" | "女性" | "成人" | "幼年";
+
 /** ログインに利用できるアカウント種別 */
 export type LoginAccountType =
   | "メールアドレス"
@@ -58,6 +61,8 @@ export type Site = {
   updateFrequency: UpdateFrequency;
   /** サイトの種別 */
   type: SiteType;
+  /** 掲載作品の対象読者ジャンル（複数該当可） */
+  genre: Genre[];
   /** ログイン機能があるかどうか */
   isLogin: boolean;
   /** ログインに利用できるアカウント種別。isLogin が false の場合は空配列 */

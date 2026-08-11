@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {
   getDevelopers,
+  getGenres,
   getLoginAccountTypes,
   getSitesBySearch,
   getSiteTypes,
@@ -26,6 +27,7 @@ export default async function SearchPage({
   const filter = parseSearchFilter(params);
   const sites = getSitesBySearch(filter);
   const siteTypes = getSiteTypes();
+  const genres = getGenres();
   const loginAccountTypes = getLoginAccountTypes();
   const developers = getDevelopers();
   const updateFrequencyUnits = getUpdateFrequencyUnits();
@@ -46,6 +48,21 @@ export default async function SearchPage({
                 className={styles.checkbox}
               />
               {type}
+            </label>
+          ))}
+        </fieldset>
+        <fieldset className={styles.fieldset}>
+          <legend className={styles.legend}>ジャンル</legend>
+          {genres.map((genre) => (
+            <label key={genre} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                name="genre"
+                value={genre}
+                defaultChecked={filter.genres.includes(genre)}
+                className={styles.checkbox}
+              />
+              {genre}
             </label>
           ))}
         </fieldset>

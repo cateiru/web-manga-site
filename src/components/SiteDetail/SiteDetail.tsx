@@ -64,6 +64,10 @@ export function SiteDetail({ site }: SiteDetailProps) {
           <dd>{site.type}</dd>
         </div>
         <div className={styles.metaRow}>
+          <dt>ジャンル</dt>
+          <dd>{site.genre.join("、")}</dd>
+        </div>
+        <div className={styles.metaRow}>
           <dt>ログイン</dt>
           <dd>
             {site.isLogin ? site.loginAccountType.join("、") : "ログイン機能なし"}

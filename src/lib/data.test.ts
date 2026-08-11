@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   getDevelopers,
+  getGenres,
   getLoginAccountTypes,
   getPublishers,
   getSiteById,
@@ -18,6 +19,7 @@ import {
 
 const EMPTY_FILTER: SearchFilter = {
   types: [],
+  genres: [],
   usageFlags: [],
   isLogin: null,
   loginAccountTypes: [],
@@ -102,6 +104,16 @@ describe("getSiteTypes", () => {
   });
 });
 
+describe("getGenres", () => {
+  it("重複のないジャンル一覧を ja ロケールの文字列順で返す", () => {
+    const genres = getGenres();
+    expect(new Set(genres).size).toBe(genres.length);
+
+    const sorted = [...genres].sort((a, b) => a.localeCompare(b, "ja"));
+    expect(genres).toEqual(sorted);
+  });
+});
+
 describe("getLoginAccountTypes", () => {
   it("重複のないログインアカウント種別一覧を ja ロケールの文字列順で返す", () => {
     const types = getLoginAccountTypes();
@@ -146,6 +158,15 @@ describe("getSitesBySearch", () => {
     expect(sites.length).toBeGreaterThan(0);
     for (const site of sites) {
       expect(site.type).toBe(type);
+    }
+  });
+
+  it("ジャンルは OR で絞り込む", () => {
+    const [genre] = getGenres();
+    const sites = getSitesBySearch({ ...EMPTY_FILTER, genres: [genre] });
+    expect(sites.length).toBeGreaterThan(0);
+    for (const site of sites) {
+      expect(site.genre).toContain(genre);
     }
   });
 
@@ -273,10 +294,19 @@ describe("parseSearchFilter", () => {
     });
   });
 
+  it("ジャンルを解決する", () => {
+    const [genre] = getGenres();
+    expect(parseSearchFilter({ genre })).toEqual({
+      ...EMPTY_FILTER,
+      genres: [genre],
+    });
+  });
+
   it("未知の値は無視する", () => {
     expect(
       parseSearchFilter({
         type: "__not_exist__",
+        genre: "__not_exist__",
         usage: "__not_exist__",
         loginAccountType: "__not_exist__",
         developer: "__not_exist__",

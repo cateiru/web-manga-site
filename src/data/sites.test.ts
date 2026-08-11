@@ -3,6 +3,7 @@ import { sites } from "./sites";
 import { formatUpdateFrequency } from "@/lib/format";
 
 const VALID_DAYS = new Set(["mon", "tue", "wed", "thu", "fri", "sat", "sun"]);
+const VALID_GENRES = new Set(["少年", "青年", "少女", "女性", "成人", "幼年"]);
 
 function isAbsoluteUrl(value: string): boolean {
   try {
@@ -35,6 +36,15 @@ describe("sites データの整合性", () => {
       expect(freq.timesPerInterval, `${site.id} の timesPerInterval`).toBeNull();
       expect(freq.daysOfWeek, `${site.id} の daysOfWeek`).toBeNull();
       expect(freq.timesOfDay, `${site.id} の timesOfDay`).toBeNull();
+    }
+  });
+
+  it("genre は1件以上、既知のジャンルのみを含む", () => {
+    for (const site of sites) {
+      expect(site.genre.length, `${site.id} の genre`).toBeGreaterThan(0);
+      for (const genre of site.genre) {
+        expect(VALID_GENRES.has(genre), `${site.id} の genre: ${genre}`).toBe(true);
+      }
     }
   });
 
