@@ -3473,4 +3473,66 @@ export const sites: Site[] = [
     ogImageUrl:
       "https://s3.ap-northeast-1.amazonaws.com/prd-gakcomic.gakken.jp-wordpress/wp-content/uploads/2022/09/about.jpg",
   },
+  {
+    id: "119",
+    name: "Palcy",
+    publisher: "講談社",
+    developer: [
+      {
+        name: "ピクシブ株式会社",
+        url: "https://prtimes.jp/main/html/rd/p/000000004.000035885.html",
+      },
+    ],
+    updateFrequency: {
+      unit: "irregular",
+      interval: null,
+      timesPerInterval: null,
+      daysOfWeek: null,
+      timesOfDay: null,
+    },
+    type: "出版社型",
+    genre: ["少女", "女性"],
+    isLogin: false,
+    loginAccountType: [],
+    isPurchase: false, // アプリでは存在するがWebには存在しないので false
+    isRental: false, // アプリでは存在するがWebには存在しないので false
+    isSubscribe: false,
+    hasApp: true,
+    description:
+      "講談社の少女・女性マンガが毎日無料で読めるマンガアプリ。Palcyでしか読めないオリジナル作品や、大人気雑誌の最新話もたくさん読める！",
+    url: "https://palcy.jp/",
+    faviconUrl: "https://palcy.jp/favicon.ico",
+    ogImageUrl: "https://palcy.jp/_next/static/media/ogp.07510d5b.png",
+  },
+  {
+    id: "120",
+    name: "パルシィNEXT",
+    publisher: "講談社",
+    developer: [
+      {
+        name: "ピクシブ株式会社",
+        url: "https://prtimes.jp/main/html/rd/p/000000004.000035885.html",
+      },
+    ],
+    updateFrequency: {
+      unit: "irregular",
+      interval: null,
+      timesPerInterval: null,
+      daysOfWeek: null,
+      timesOfDay: null,
+    },
+    type: "出版社型",
+    genre: ["少女", "女性"],
+    isLogin: false,
+    loginAccountType: [],
+    isPurchase: false,
+    isRental: false,
+    isSubscribe: false,
+    hasApp: false,
+    description:
+      "講談社の少女・女性コミックの新人賞受賞作や、フレッシュな新作読み切りがぜんぶ無料で読めるWEB漫画サイト",
+    url: "https://next.palcy.jp/ja",
+    faviconUrl: "https://next.palcy.jp/icon.png?icon.1azbb58kf6vax.png",
+    ogImageUrl: "https://next.palcy.jp/ogp.png",
+  },
 ];
