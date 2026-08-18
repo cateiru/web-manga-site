@@ -11,7 +11,7 @@ type SiteCardProps = {
 
 export function SiteCard({ site }: SiteCardProps) {
   return (
-    <Link href={`/site/${site.id}`} className={styles.card}>
+    <Link href={`/site/${site.id}`} prefetch={false} className={styles.card}>
       <SiteOgImage site={site} className={styles.ogImage} />
       <div className={styles.header}>
         {site.faviconUrl && (
