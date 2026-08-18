@@ -49,3 +49,5 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
+        env:
+          SITE_URL: https://example.com
