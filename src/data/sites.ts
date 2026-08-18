@@ -3535,4 +3535,36 @@ export const sites: Site[] = [
     faviconUrl: "https://next.palcy.jp/icon.png?icon.1azbb58kf6vax.png",
     ogImageUrl: "https://next.palcy.jp/ogp.png",
   },
+  {
+    id: "121",
+    name: "MANGABU！",
+    publisher: "ファムエンタテインメント",
+    developer: [
+      {
+        name: "株式会社コミチ",
+        url: "https://comici.co.jp/business/comici-plus",
+      },
+    ],
+    updateFrequency: {
+      unit: "irregular",
+      interval: null,
+      timesPerInterval: null,
+      daysOfWeek: null,
+      timesOfDay: null,
+    },
+    type: "出版社型",
+    genre: ["青年", "女性"],
+    isLogin: true,
+    loginAccountType: ["コミチID"],
+    isPurchase: false,
+    isRental: true,
+    isSubscribe: false,
+    hasApp: false,
+    description: null,
+    url: "https://mangabu.jp/",
+    faviconUrl:
+      "https://cdn-public.comici.jp/content/default/favicon/20260727143551129F50C73D00FDA2BD6D78CE4082E70F008.png",
+    ogImageUrl:
+      "https://cdn-public.comici.jp/content/53/ogpimages/2026072717094678512DCCE4F0089A251FC4B41216B913ACD.png",
+  },
 ];
